@@ -18,8 +18,7 @@ Time-kill of HS-3 under three stresses, tracked as CFU/mL.
 
 The workbook preserves the recorded plate counts and assay metadata. The
 manuscript workflow uses the CSV derived from it to reproduce CFU calculations,
-statistics, and figures. Plate photographs are not included in this checkout;
-reproduction starts from the recorded counts.
+statistics, and figures. Reproduction starts from the recorded counts.
 
 `survival_data.csv` is regenerated from the workbook with:
 
