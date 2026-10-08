@@ -86,3 +86,7 @@ The destination must be new and outside this project. This exports the source,
 methods, dependency pins, and frozen inputs. Supply the raw CR images separately
 as described above. The exported directory can be installed and reproduced on
 its own.
+
+## AI disclosure
+
+AI tools assisted with code development, documentation, and validation.
