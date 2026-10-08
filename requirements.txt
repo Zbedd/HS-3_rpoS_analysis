@@ -1,0 +1,50 @@
+# HS3 assay analysis — Python dependencies.
+#
+# Requires Python 3.9–3.12. The exact pins below ship no cp313 wheel, so a
+# 3.13+ interpreter will try to build them from source; use 3.12 or older.
+#
+# Pinning policy: a package is pinned exactly (==) only where its version
+# decides the numbers or the pixels in a published figure. Everything that
+# just moves bytes around is left to float, so routine security updates do
+# not require a re-pin. Versions are those the figures in outputs/ were
+# generated with.
+# For manuscript reproduction, requirements-reproduce.txt also pins the
+# remaining runtime dependencies and their transitive dependencies.
+
+# ── Decides the pixels ────────────────────────────────────────
+# Layout, default margins, violin/errorbar rendering and the text metrics
+# behind every figure. A minor bump silently shifts figures.
+matplotlib==3.9.4
+pymsaviz==0.5.0           # manuscript alignment supplements
+logomaker==0.8.7         # optional sequence-logo views
+
+# ── Decides the numbers ───────────────────────────────────────
+# scipy: Tukey HSD, linregress, t quantiles (SURV).
+# statsmodels: type II ANOVA, within-timepoint Tukey, the ANCOVA slope test.
+scipy==1.13.1
+statsmodels==0.14.6
+
+# ── Decides the CR pixel values ───────────────────────────────
+# rawpy wraps LibRaw: the demosaic is what turns a DNG into the RGB the
+# calibration and redness metrics are computed from. opencv drives colony
+# detection (threshold, contours), so detection counts track its version.
+# Not needed for SURV or sequence analyses.
+rawpy==0.27.0
+opencv-python==5.0.0.93          # -headless is interchangeable here
+
+# ── Decides the rpoS-locus coordinates ────────────────────────
+# biopython parses pRE118 GenBank features for the integration and construct
+# maps, and scores the core-cassette identities behind panel B's
+# ortholog labels. The junction call itself is exact matching and depends on
+# nothing here.
+biopython==1.85
+
+# ── Numerics ─────────────────────────────────────────────────
+numpy~=2.0
+pandas~=2.3
+
+# ── I/O ──────────────────────────────────────────────────────
+PyYAML
+Pillow
+pillow-heif
+openpyxl

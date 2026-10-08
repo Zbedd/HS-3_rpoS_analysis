@@ -1,0 +1,15 @@
+HS-3 manuscript analysis — publication snapshot
+
+This source snapshot was prepared from the HS3_analysis development project
+on 2026-10-08. The development baseline was commit 09069f7; scope cleanup and validation
+were completed before export from development commit 80a345d748bd1cea001b56829b491dac9ac12388. A fresh publication history
+represents a curated release, not the date on which the software was first
+written. Preserve the original development history separately.
+
+Contributors recorded in the development history:
+- Zach Beddingfield (also recorded as Zachary Beddingfield)
+- Isabel Calimlim (also recorded as icalimlim3)
+
+The existing MIT license and copyright notice are retained in LICENSE.
+Scientific input provenance and checksums are in data/manuscript/manifest.json.
+The fixed source date used for deterministic figures is preserved.

@@ -1,0 +1,84 @@
+software_versions:
+  interproscan: 5.78-109.0
+  hmmer: '3.3'
+  pfam_a: '38.2'
+  ncbifam: '19.0'
+  clustal_omega_endpoint: EBI Job Dispatcher REST clustalo
+  pymsaviz: 0.5.0
+hs3_candidates:
+  rpoS: WP_255517369.1
+  rpoD: WP_200915120.1
+references:
+  rpoS:
+  - source: uniprot
+    id: P13445
+    name: E. coli K-12 RpoS
+  - source: ncbi
+    id: WP_003113871.1
+    name: P. aeruginosa PA14 RpoS
+  - source: uniprot
+    id: O51804
+    name: V. cholerae RpoS
+  rpoD:
+  - source: uniprot
+    id: P00579
+    name: E. coli K-12 RpoD
+  - source: ncbi
+    id: WP_003085035.1
+    name: P. aeruginosa PA14 RpoD
+  - source: uniprot
+    id: Q9KUK1
+    name: V. cholerae RpoD
+sigma70_framework:
+  reference: Gevin et al. 2024, BMC Genomics 25:512 (DOI 10.1186/s12864-024-10415-x)
+  group1_RpoD:
+    essential_pfams:
+    - PF03979
+    - PF00140
+    - PF04542
+    - PF04539
+    - PF04545
+    discriminating_domain: PF03979 (Sigma70_r1_1)
+    nfam_curated:
+    - PRK05658.1
+    - TIGR02393
+  group2_RpoS:
+    essential_pfams:
+    - PF00140
+    - PF04542
+    - PF04539
+    - PF04545
+    forbidden_domain: PF03979 (Sigma70_r1_1; absent in Group 2)
+    nfam_curated:
+    - PRK05657.1
+    - TIGR02394
+diagnostic_regions:
+  ecoli_rpoS_uniprot: P13445
+  ecoli_rpoS_length: 330
+  region_1_2:
+    name: σ region 1.2 (Sigma70_r1.2, PF00140)
+    ecoli_rpoS_range:
+    - 57
+    - 113
+  region_2:
+    name: σ region 2 (Sigma70_r2, PF04542; subregion 2.4 = −10 recognition)
+    ecoli_rpoS_range:
+    - 114
+    - 186
+  region_3:
+    name: σ region 3 (Sigma70_r3, PF04539; transcript initiation)
+    ecoli_rpoS_range:
+    - 187
+    - 253
+  region_4:
+    name: σ region 4 (Sigma70_r4, PF04545; subregion 4.2 = −35 recognition)
+    ecoli_rpoS_range:
+    - 254
+    - 322
+diagnostic:
+  consensus_min: 3
+  reference_panel_size: 3
+align:
+  ebi_endpoint: https://www.ebi.ac.uk/Tools/services/rest/clustalo
+hmmer:
+  ebi_endpoint: https://www.ebi.ac.uk/Tools/services/rest/iprscan5

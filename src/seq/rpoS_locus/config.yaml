@@ -1,0 +1,257 @@
+# rpoS_locus configuration. Source of truth for every input this workstream
+# reads. No accession, coordinate or path is written in code.
+
+# ── Genomes ───────────────────────────────────────────────────
+# Comparators are fetched through seq.assemblies into the shared assembly
+# cache. A genome registered here but absent from `comparators` is
+# neither fetched nor drawn.
+assemblies:
+  hs3:
+    accession: GCF_015140455.1
+    replicon: NZ_AP024094.1        # chromosome; NZ_AP024095.1 is the 2 kb plasmid pJHS3
+    name: "Jeongeupia sacculi HS-3"
+    short: "HS-3"
+  k12:
+    accession: GCF_000005845.2
+    replicon: NC_000913.3
+    name: "Escherichia coli K-12 MG1655"
+    short: "E. coli"
+  pa14:
+    accession: GCF_000014625.1
+    replicon: NC_008463.1
+    name: "Pseudomonas aeruginosa UCBPP-PA14"
+    short: "P. aeruginosa"
+  vch:
+    accession: GCF_008369605.1
+    replicon: NZ_CP043554.1
+    name: "Vibrio cholerae O1 El Tor N16961"
+    short: "V. cholerae"
+# Row order for panels B and C and the supplement, HS-3 first, then one
+# reference per order: Enterobacterales, Pseudomonadales, Vibrionales.
+comparators: [hs3, k12, pa14, vch]
+
+# ── Panel A: the σ factor complement ──────────────────────────
+# Five factors are shown. Match RefSeq product strings because σ54 has no
+# gene symbol in this annotation.
+sigma_factors:
+  patterns:
+    RpoD: "RNA polymerase sigma factor RpoD"
+    RpoS: "RNA polymerase sigma factor RpoS"
+    RpoH: "RNA polymerase sigma factor RpoH"
+    RpoE: "RNA polymerase sigma factor RpoE"
+    RpoN: "RNA polymerase factor sigma-54"
+  # The manuscript comparison uses the factors listed below.
+  # Drawn outside the ring, in the order listed above.
+  housekeeping: RpoD
+  focus: RpoS
+
+# ── The rpoS reading frame ────────────────────────────────────
+# RefSeq annotates the CDS from an internal ATG at 1,070,446. The initiation
+# codon is the in-frame ATG 18 bp upstream at 1,070,428: no stop lies between
+# them, and the disruption primers were designed against it — the homology arm
+# opens at 1,070,431, the base immediately after that codon, which is what
+# leaves the downstream copy unable to initiate.
+#
+# Panel D and every reported coordinate use this start. Panels A and B stay on
+# the RefSeq annotation, where 18 bp is invisible and the comparator genomes
+# carry annotations of their own.
+rpoS_start: 1070428
+
+# ── Panel B: the rpoS neighbourhood ───────────────────────────
+neighbourhood:
+  anchor: rpoS
+  # Tight enough that every gene drawn can be named. A wider window fills the
+  # row with anonymous arrows, which lengthen the panel without adding
+  # evidence: the claim is about the cassette, and the flanking gene either
+  # side is what shows where the cassette ends and context begins.
+  flank_upstream_bp: 3300
+  flank_downstream_bp: 1500
+  # Orthology across four genomes without a BLAST binary on this platform:
+  # match the RefSeq gene symbol where the annotation gives one, and fall back
+  # to the product string where it does not. The nlpD-like gene is unnamed in
+  # HS-3 and PA14, which is the whole reason for the fallback.
+  ortholog_groups:
+    - key: surE
+      label: surE
+      symbols: [surE, umpG]
+      products: ["5'/3'-nucleotidase SurE", "5'(3')-nucleotidase"]
+    - key: pcm
+      label: pcm
+      symbols: [pcm]
+      products: ["protein-L-isoaspartate"]
+    - key: nlpD
+      label: nlpD
+      symbols: [nlpD]
+      products: ["peptidoglycan DD-metalloendopeptidase", "murein hydrolase activator"]
+    - key: rpoS
+      label: rpoS
+      symbols: [rpoS]
+      products: ["RNA polymerase sigma factor RpoS"]
+
+# ── Supplement: the four other σ factors ──────────────────────
+# Same two views the rpoS figure gives its own locus — the neighbourhood
+# across the four genomes, then the domain architecture of the protein — for
+# each additional factor selected for the manuscript comparison.
+#
+# Every locus reuses `assemblies` and `comparators` above, so the supplement
+# and the manuscript figure cannot disagree about which genomes the paper
+# uses or what order they are drawn in.
+alt_factors:
+  order: [rpoD, rpoH, rpoE, rpoN]
+
+  # The row header over each factor's pair of panels. σ numbers are the
+  # conventional ones, written the plain way the domain key writes them
+  # rather than with superscripts.
+  sigma_names:
+    rpoD: σ70
+    rpoH: σ32
+    rpoE: σ24
+    rpoN: σ54
+
+  # Residues of the drawn protein a domain panel is aligned on. σ70 region 2
+  # is the one region every member of the family carries, whatever its group,
+  # so it is what puts the domains in columns across a panel; RpoH would go
+  # ragged on r1.2, which K-12 does not score. σ54 shares none of them.
+  align_on:
+    rpoD: PF04542
+    rpoH: PF04542
+    rpoE: PF04542
+    rpoN: PF04963
+
+  loci:
+    rpoD:
+      anchor: rpoD
+      # rpsU-dnaG-rpoD, the macromolecular synthesis operon: ribosome,
+      # replication and transcription in one transcript, and the reason the
+      # housekeeping σ factor sits where it does in every γ- and
+      # β-proteobacterium drawn here.
+      flank_upstream_bp: 3300
+      flank_downstream_bp: 1500
+      ortholog_groups:
+        - key: rpsU
+          symbols: [rpsU]
+          products: ["30S ribosomal protein S21", "30S ribosomal subunit protein S21"]
+        - key: dnaG
+          symbols: [dnaG]
+          products: ["DNA primase"]
+        - key: rpoD
+          symbols: [rpoD]
+          products: ["RNA polymerase sigma factor RpoD"]
+
+    rpoH:
+      anchor: rpoH
+      # ftsY-ftsE-ftsX immediately upstream in all four. The cell-division
+      # transporter and the SRP receptor are not part of the heat-shock
+      # regulon; the block is conserved gene order, not a shared function.
+      flank_upstream_bp: 3900
+      flank_downstream_bp: 1500
+      ortholog_groups:
+        - key: ftsY
+          symbols: [ftsY]
+          products: ["signal recognition particle-docking protein FtsY",
+                     "signal recognition particle receptor"]
+        - key: ftsE
+          symbols: [ftsE]
+          products: ["cell division ATP-binding protein FtsE",
+                     "cell division protein FtsE"]
+        - key: ftsX
+          symbols: [ftsX]
+          products: ["permease-like cell division protein FtsX",
+                     "cell division protein FtsX"]
+        - key: rpoH
+          symbols: [rpoH]
+          products: ["RNA polymerase sigma factor RpoH"]
+
+    rpoE:
+      anchor: rpoE
+      # The σE factor sits at the head of its own operon, transcribed with the
+      # anti-σ factor that sequesters it and the periplasmic protein that
+      # holds that complex together. P. aeruginosa names all three after
+      # alginate — algU-mucA-mucB — because mucA lesions are what make the
+      # cystic-fibrosis isolates mucoid; the genes are the same three.
+      flank_upstream_bp: 2400
+      flank_downstream_bp: 2300
+      ortholog_groups:
+        - key: rpoE
+          symbols: [rpoE, algU, algT]
+          products: ["RNA polymerase sigma factor RpoE"]
+        - key: rseA
+          symbols: [rseA, mucA]
+          products: ["sigma-E factor negative regulatory protein",
+                     "anti-sigma-E factor RseA", "anti-sigma factor MucA"]
+        - key: rseB
+          symbols: [rseB, mucB]
+          products: ["MucB/RseB", "anti-sigma factor stabilizing protein RseB",
+                     "sigma-E factor regulatory protein RseB",
+                     "sigma factor AlgU regulator MucB"]
+      aliases:
+        # RefSeq gives the PA14 gene the symbol rpoE. AlgU (also AlgT) is the
+        # name the alginate literature uses and the one mucA and mucB are
+        # named after, so the row carries it.
+        pa14: {rpoE: algU}
+
+    rpoN:
+      anchor: rpoN
+      # lptB-rpoN-hpf-ptsN: the σ54 gene lies between the LPS transport
+      # operon and the nitrogen-regulatory PTS genes it is co-transcribed
+      # with, in all four genomes.
+      flank_upstream_bp: 2300
+      flank_downstream_bp: 2200
+      ortholog_groups:
+        - key: lptB
+          symbols: [lptB]
+          products: ["LPS export ABC transporter ATP-binding protein",
+                     "lipopolysaccharide transport system ATP binding protein"]
+        - key: rpoN
+          # Only K-12 gives σ54 a gene symbol; the other three annotate it by
+          # product alone, which is why the anchor is matched on both.
+          symbols: [rpoN]
+          products: ["RNA polymerase factor sigma-54",
+                     "RNA polymerase sigma factor RpoN"]
+        - key: hpf
+          symbols: [hpf]
+          products: ["ribosome hibernation-promoting factor",
+                     "ribosome hibernation promoting factor"]
+        - key: ptsN
+          # HS-3 annotates its copy with the generic "PTS sugar transporter
+          # subunit IIA"; the identity table checks it against K-12 PtsN
+          # rather than resting on the position in the operon.
+          symbols: [ptsN]
+          products: ["PTS IIA-like nitrogen regulatory protein PtsN",
+                     "phosphotransferase system enzyme IIA(Ntr)",
+                     "PTS sugar transporter subunit IIA"]
+
+# ── Mutant and vector inputs ─────────────────────────────────
+mutant:
+  # Plasmidsaurus long-read assembly of HS-3 rpoS-, one closed contig.
+  # Provenance in data/rpoS_locus/README.md.
+  contigs: mutant_rpoS.fna.gz
+  contig: contig_1
+  annotation: mutant_rpoS_annotation.tsv
+  strain: "HS-3 rpoS-"
+
+vector:
+  genbank: pRE118.gbk
+  name: pRE118
+  # Blocks drawn on the plasmid map, in the order the GenBank labels them.
+  # Everything else in the file is a fragment and is drawn unlabelled.
+  features: [KanR, sacB, "sacB promoter", "R6K γ ori", oriT, traJ, traK]
+
+# ── Panel D: how the outcome tier is drawn ────────────────────
+# The vector between the selection marker and the 3' copy carries nothing the
+# panel claims, and 4 kb of it drawn to scale pushes rpoS off the page. It is
+# collapsed behind a break mark instead. Lengths are bp of drawn width, so
+# they scale with the rest of the tier.
+integration_panel:
+  markers: [KanR]     # vector genes drawn on the outcome tier; the rest of the
+                      # vector contributes only distance, which the backbone
+                      # line carries at the same scale as any intergenic gap
+  keep_bp: 260        # vector still drawn past the last marker
+  break_bp: 420       # width the break mark occupies
+
+junction:
+  # Exact-match anchor length for the WT <-> vector <-> WT walk. The call is
+  # re-derived at every value listed and must agree, which is what makes an
+  # assembly artefact at one k visible instead of silent.
+  anchor_k: [25, 31, 41]
+  window: [1650000, 1680000]   # mutant contig coordinates bracketing the insertion

@@ -1,0 +1,40 @@
+# Packaging exists for one reason: to make `paths`, `viz`, `assays`, `seq`
+# and `figures` importable from anywhere without a path hack. Install once
+# per environment:
+#
+#     .venv/bin/pip install -e .
+#
+# `requirements.txt` stays the pin file — it records which versions decide a
+# figure's numbers or pixels, which is a stricter question than which versions
+# the package will run under.
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hs3"
+version = "0.1.0"
+description = "HS-3 phenotypic assay analysis and figure generation"
+readme = "README.md"
+# The exact pins in requirements.txt ship no cp313 wheel.
+requires-python = ">=3.9,<3.13"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+# `paths` and `multiplicity` are top-level modules, not packages, so
+# setuptools' package finder does not see them — without `py-modules` they are
+# silently absent from a wheel.
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["paths", "multiplicity", "reproduction"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Sequence configs are loaded beside their modules and must travel with them.
+[tool.setuptools.package-data]
+"seq.rpos_alignments" = ["*.yaml"]
+"seq.rpoS_locus" = ["*.yaml"]

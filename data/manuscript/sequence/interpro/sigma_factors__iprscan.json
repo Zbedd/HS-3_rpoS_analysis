@@ -1,0 +1,4717 @@
+{
+  "interproscan-version": "5.78-109.0",
+  "results": [
+    {
+      "sequence": "MTDKMQSLALAPVGNLDSYIRAANAWPMLSADEERALAEKLHYHGDLEAAKTLILSHLRFVVHIARNYAGYGLPQADLIQEGNIGLMKAVRRFNPEVGVRLVSFAVHWIKAEIHEYVLRNWRIVKVATTKAQRKLFFNLRKTKQRLGWFNQDEVEMVARELGVTSKDVREMESRMAAQDMTFDLSSDDDSDSQPMAPVLYLQDKSSNFADGIEDDNWEEQAANRLTDAMQGLDERSQDIIRARWLDEDNKSTLQELADRYGVSAERVRQLEKNAMKKLRAAIEA",
+      "md5": "80fc84758c6f971322646c5516b8915f",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 53,
+              "end": 122,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 70,
+              "hmmLength": 71,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 8.8e-15,
+              "score": 65.5,
+              "envelopeStart": 53,
+              "envelopeEnd": 123,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 53,
+                  "end": 122,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 4.7e-15,
+          "score": 66.4,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "PF04545",
+            "name": "Sigma70_r4",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007630",
+              "name": "RNA_pol_sigma70_r4",
+              "description": "RNA polymerase sigma-70 region 4",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 228,
+              "end": 280,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 50,
+              "hmmLength": 50,
+              "hmmBounds": "COMPLETE",
+              "evalue": 2.6e-13,
+              "score": 60.6,
+              "envelopeStart": 228,
+              "envelopeEnd": 280,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 228,
+                  "end": 280,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 8.5e-15,
+          "score": 65.3,
+          "model-ac": "PF04545"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02392",
+            "name": "rpoH_proteo",
+            "description": "RNA polymerase sigma factor RpoH",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR012759",
+              "name": "RNA_pol_sigma_RpoH_proteobac",
+              "description": "RNA polymerase sigma factor RpoH, proteobacteria",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 14,
+              "end": 283,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 269,
+              "hmmLength": 270,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1e-125,
+              "score": 430.4,
+              "envelopeStart": 14,
+              "envelopeEnd": 284,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 14,
+                  "end": 283,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 9e-126,
+          "score": 430.5,
+          "model-ac": "TIGR02392"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 48,
+              "end": 281,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 164,
+              "hmmLength": 165,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 5.5e-31,
+              "score": 118.8,
+              "envelopeStart": 48,
+              "envelopeEnd": 282,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 48,
+                  "end": 281,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 4.1e-31,
+          "score": 119.3,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "NF005143",
+            "name": "PRK06596.1",
+            "description": "RNA polymerase factor sigma-32",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 283,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 282,
+              "hmmLength": 285,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 466.5,
+              "envelopeStart": 1,
+              "envelopeEnd": 284,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 283,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 466.6,
+          "model-ac": "NF005143"
+        }
+      ],
+      "xref": [
+        {
+          "name": "NP_417918.1",
+          "id": "NP_417918.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MEQRTERELDSELVARAQAGDKRAFELLVIKYQRRIARLLSRLIRDPHEIEDVTQEAFIKAYRALPSFRGESAFYTWLYRIAINTAKNYLASMGRRPQLAMDYEDEDGETLDAAAQIPDFHTPESELSNRQIVSTVNEAVDALPEELRTAITLREMEGLSYEEISSVMNCPIGTVRSRIFRAREAIATKLRPLLATIGKDRRW",
+      "md5": "b57480c365893194cbfabf5df0794635",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF08281",
+            "name": "Sigma70_r4_2",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR013249",
+              "name": "RNA_pol_sigma70_r4_t2",
+              "description": "RNA polymerase sigma factor 70, region 4 type 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 138,
+              "end": 185,
+              "representative": true,
+              "hmmStart": 6,
+              "hmmEnd": 53,
+              "hmmLength": 54,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 3.4e-14,
+              "score": 63.5,
+              "envelopeStart": 135,
+              "envelopeEnd": 186,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 138,
+                  "end": 185,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.7e-14,
+          "score": 64.5,
+          "model-ac": "PF08281"
+        },
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 28,
+              "end": 95,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 70,
+              "hmmLength": 71,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 6.8e-16,
+              "score": 69.1,
+              "envelopeStart": 28,
+              "envelopeEnd": 96,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 28,
+                  "end": 95,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 4.1e-16,
+          "score": 69.8,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02939",
+            "name": "RpoE_Sigma70",
+            "description": "RNA polymerase sigma factor RpoE",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014286",
+              "name": "RNA_pol_sigma70_RpoE",
+              "description": "RNA polymerase sigma-70 RpoE type",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 5,
+              "end": 194,
+              "representative": true,
+              "hmmStart": 2,
+              "hmmEnd": 190,
+              "hmmLength": 190,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 1.6e-84,
+              "score": 294.1,
+              "envelopeStart": 4,
+              "envelopeEnd": 194,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 5,
+                  "end": 194,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.4e-84,
+          "score": 294.3,
+          "model-ac": "TIGR02939"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 24,
+              "end": 190,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 165,
+              "hmmLength": 165,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 2.1e-27,
+              "score": 107.2,
+              "envelopeStart": 23,
+              "envelopeEnd": 190,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 24,
+                  "end": 190,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.7e-27,
+          "score": 107.5,
+          "model-ac": "TIGR02937"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_200917341.1",
+          "id": "WP_200917341.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MSEQLTDQVLVERVQKGDQKAFNLLVVRYQHKVASLVSRYVPSGDVPDVVQEAFIKAYRALDSFRGDSAFYTWLYRIAVNTAKNYLVAQGRRPPSSDVDAIEAENFESGGALKEISNPENLMLSEELRQIVFRTIESLPEDLRMAITLRELDGLSYEEIAAIMDCPVGTVRSRIFRAREAIDNKVQPLIRR",
+      "md5": "cbc71f42bfa9d5ba628fd0f044c0b4df",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF08281",
+            "name": "Sigma70_r4_2",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR013249",
+              "name": "RNA_pol_sigma70_r4_t2",
+              "description": "RNA polymerase sigma factor 70, region 4 type 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 130,
+              "end": 180,
+              "representative": true,
+              "hmmStart": 3,
+              "hmmEnd": 53,
+              "hmmLength": 54,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 4.5e-16,
+              "score": 69.5,
+              "envelopeStart": 123,
+              "envelopeEnd": 181,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 130,
+                  "end": 180,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.6e-16,
+          "score": 70.3,
+          "model-ac": "PF08281"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02939",
+            "name": "RpoE_Sigma70",
+            "description": "RNA polymerase sigma factor RpoE",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014286",
+              "name": "RNA_pol_sigma70_RpoE",
+              "description": "RNA polymerase sigma-70 RpoE type",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 189,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 190,
+              "hmmLength": 190,
+              "hmmBounds": "COMPLETE",
+              "evalue": 4.4e-95,
+              "score": 328.6,
+              "envelopeStart": 1,
+              "envelopeEnd": 189,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 189,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.9e-95,
+          "score": 328.7,
+          "model-ac": "TIGR02939"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 21,
+              "end": 183,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 163,
+              "hmmLength": 165,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 9.4e-28,
+              "score": 108.3,
+              "envelopeStart": 20,
+              "envelopeEnd": 185,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 21,
+                  "end": 183,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 8.2e-28,
+          "score": 108.5,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 25,
+              "end": 91,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 70,
+              "hmmLength": 71,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 9.4e-15,
+              "score": 65.5,
+              "envelopeStart": 25,
+              "envelopeEnd": 92,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 25,
+                  "end": 91,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 5.1e-15,
+          "score": 66.3,
+          "model-ac": "PF04542"
+        }
+      ],
+      "xref": [
+        {
+          "name": "NP_417068.1",
+          "id": "NP_417068.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MNEQLTDQVLIERVQNGDKQAFNLLVLRYQNKVCNLISRYVSNSGDVADVAQEAFIKAYRAIPTFRGESAFYTWLYRIAVNTAKNHIVAQSRRPPASDVDAEEAEFYEGGDALKELSNPENITLSKELKKTVFDAIDALPDDLKTAMTLRELDGLSYEEIAEVMDCPVGTVRSRIFRAREAVEKKIKPLL",
+      "md5": "d87ec20adb1220e987f7b83a8c6dd7a9",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 25,
+              "end": 93,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 71,
+              "hmmLength": 71,
+              "hmmBounds": "COMPLETE",
+              "evalue": 5.5e-16,
+              "score": 69.4,
+              "envelopeStart": 25,
+              "envelopeEnd": 93,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 25,
+                  "end": 93,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.6e-16,
+          "score": 70.0,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02939",
+            "name": "RpoE_Sigma70",
+            "description": "RNA polymerase sigma factor RpoE",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014286",
+              "name": "RNA_pol_sigma70_RpoE",
+              "description": "RNA polymerase sigma-70 RpoE type",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 2,
+              "end": 190,
+              "representative": true,
+              "hmmStart": 2,
+              "hmmEnd": 190,
+              "hmmLength": 190,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 5e-97,
+              "score": 334.9,
+              "envelopeStart": 1,
+              "envelopeEnd": 190,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 2,
+                  "end": 190,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 4.5e-97,
+          "score": 335.1,
+          "model-ac": "TIGR02939"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 21,
+              "end": 185,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 164,
+              "hmmLength": 165,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 1.3e-28,
+              "score": 111.2,
+              "envelopeStart": 20,
+              "envelopeEnd": 186,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 21,
+                  "end": 185,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.1e-28,
+          "score": 111.4,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "PF08281",
+            "name": "Sigma70_r4_2",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR013249",
+              "name": "RNA_pol_sigma70_r4_t2",
+              "description": "RNA polymerase sigma factor 70, region 4 type 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 134,
+              "end": 181,
+              "representative": true,
+              "hmmStart": 6,
+              "hmmEnd": 53,
+              "hmmLength": 54,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 1.4e-14,
+              "score": 64.7,
+              "envelopeStart": 130,
+              "envelopeEnd": 182,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 134,
+                  "end": 181,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 4.6e-15,
+          "score": 66.3,
+          "model-ac": "PF08281"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_001005346.1",
+          "id": "WP_001005346.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MKPSLQLKLGQQLAMTPQLQQAIRLLQLSTLDLQQEIQEALESNPLLEVEENQDEAPSLDSVRMTEESPREPEELYEPEPQDSSDLIEKSEISAELEMDTTWDEVYSANTGSTGLALDDDAPIYQGETTQTLQDYLHWQLDLTPFSDVDRTIAVALIDAIDDYGYLTVSLEEIQESLRSDDIELDEIEAVRKRIQQFDPFGVASLNLQDCLLLQLTTYPCDTPWLEEARLLLSQYIDDLGNRDYKTILKETKLKEEDLREILQLIQQLDPRPGSRIAQDHAEYVIPDVSVYKEQGRWLVTINPDSVPKLKINQQYADLMRGNNAESNYIRTNLQEAKWLIKSLESRNETLLKVAKCIVEHQHDFFEYGEEAMKPMVLNDVAMAVEMHESTISRVTTQKYMHTPRGIFELKYFFSSHVSTDNGGECSSTAIRALIKKLVAAENPAKPLSDSKIATLLADQGIQVARRTIAKYRESLGIAPSSQRKRLL",
+      "md5": "354c4f7b448943722a48634e8c9f0342",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF00309",
+            "name": "Sigma54_AID",
+            "description": "Sigma-54 factor, Activator interacting domain (AID)",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR000394",
+              "name": "RNA_pol_sigma_54",
+              "description": "RNA polymerase sigma factor 54",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 4,
+              "end": 49,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 46,
+              "hmmLength": 46,
+              "hmmBounds": "COMPLETE",
+              "evalue": 7.7e-15,
+              "score": 65.8,
+              "envelopeStart": 4,
+              "envelopeEnd": 49,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 4,
+                  "end": 49,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.9e-15,
+          "score": 67.7,
+          "model-ac": "PF00309"
+        },
+        {
+          "signature": {
+            "accession": "NF009118",
+            "name": "PRK12469.1",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 486,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 481,
+              "hmmLength": 483,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 491.7,
+              "envelopeStart": 1,
+              "envelopeEnd": 487,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 486,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 491.8,
+          "model-ac": "NF009118"
+        },
+        {
+          "signature": {
+            "accession": "PF04552",
+            "name": "Sigma54_DBD",
+            "description": "Sigma-54, DNA binding domain",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007634",
+              "name": "RNA_pol_sigma_54_DNA-bd",
+              "description": "RNA polymerase sigma factor 54, DNA-binding",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 327,
+              "end": 485,
+              "representative": true,
+              "hmmStart": 2,
+              "hmmEnd": 160,
+              "hmmLength": 160,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 2e-69,
+              "score": 243.9,
+              "envelopeStart": 326,
+              "envelopeEnd": 485,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 327,
+                  "end": 485,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.3e-69,
+          "score": 244.5,
+          "model-ac": "PF04552"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02395",
+            "name": "rpoN_sigma",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR000394",
+              "name": "RNA_pol_sigma_54",
+              "description": "RNA polymerase sigma factor 54",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 10,
+              "end": 484,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 434,
+              "hmmLength": 434,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 519.8,
+              "envelopeStart": 9,
+              "envelopeEnd": 484,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 10,
+                  "end": 484,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 520.1,
+          "model-ac": "TIGR02395"
+        },
+        {
+          "signature": {
+            "accession": "PF04963",
+            "name": "Sigma54_CBD",
+            "description": "Sigma-54 factor, core binding domain",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007046",
+              "name": "RNA_pol_sigma_54_core-bd",
+              "description": "RNA polymerase sigma factor 54, core-binding domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 128,
+              "end": 315,
+              "representative": true,
+              "hmmStart": 8,
+              "hmmEnd": 181,
+              "hmmLength": 181,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 1.5e-57,
+              "score": 205.8,
+              "envelopeStart": 124,
+              "envelopeEnd": 315,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 128,
+                  "end": 315,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.5e-57,
+          "score": 205.8,
+          "model-ac": "PF04963"
+        },
+        {
+          "signature": {
+            "accession": "NF004595",
+            "name": "PRK05932.1-2",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 486,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 483,
+              "hmmLength": 484,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 772.1,
+              "envelopeStart": 1,
+              "envelopeEnd": 487,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 486,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 772.2,
+          "model-ac": "NF004595"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_000804830.1",
+          "id": "WP_000804830.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MAADQELGKEDINRKQSGGANDDASDMLDPEVRKAKFKSLIVQGKERGYLTYAEINDHLPEDMLDAEQIEGVISMITNMGIQVYDEAPDAEDLLMSDAPAAVADDDAAEEAEAALSSVDAEFGRTTDPVRMYMREMGTVELLTREGEIEIAKRIEEGLKHMITAISASPTTIETILALVDKGLADEIRIDDVIDGFIDPNAVEVVAAPEPVVVEEDAAEGEEGEEEEDDGGASAAAANLELLKTQAREHFDVIRAHYEKMLKALAKDGPHSKAYLDQQAQIAEEFQKIRFSARQTENLCDQVRTMVDEIRSHEREIMDLCIQRVRMPRDYFIKTFPGRETDPSWVLEELAANKPYGEILARYQHAVMEKQEKLGELQTRALLPIKDLKEINRQMSTGEAKARRAKREMIEANLRLVISIAKKYTNRGLQFLDLIQEGNIGLMKAVDKFEYRRGYKFSTYATWWIRQAITRSIADQARTIRIPVHMIETINKMNRIQRQILQETGIDPTPEELSEKMEMPEDKIRKILKIAKEPISMETPIGDDDDSHLGDFIEDSVTVAPAEAAVYAGLREATKEILDTLTPREAKVLRMRFGIDMNTDHTLEEVGKQFDVTRERIRQIEAKALRKLRHPTRSERLKSFLESLGNDQ",
+      "md5": "8f3280e1e17e96bdc6b27b459a1a0754",
+      "matches": [
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 404,
+              "end": 629,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 163,
+              "hmmLength": 165,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 6.9e-34,
+              "score": 128.3,
+              "envelopeStart": 403,
+              "envelopeEnd": 631,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 404,
+                  "end": 629,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 5.1e-34,
+          "score": 128.7,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "PF00140",
+            "name": "Sigma70_r1_2",
+            "description": "Sigma-70 factor, region 1.2",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR009042",
+              "name": "RNA_pol_sigma70_r1_2",
+              "description": "RNA polymerase sigma-70 region 1.2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 127,
+              "end": 158,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 32,
+              "hmmLength": 34,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1e-09,
+              "score": 49.4,
+              "envelopeStart": 127,
+              "envelopeEnd": 160,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 127,
+                  "end": 158,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.8e-10,
+          "score": 51.3,
+          "model-ac": "PF00140"
+        },
+        {
+          "signature": {
+            "accession": "PF03979",
+            "name": "Sigma70_r1_1",
+            "description": "Sigma-70 factor, region 1.1",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007127",
+              "name": "RNA_pol_sigma_70_r1_1",
+              "description": "RNA polymerase sigma factor 70, region 1.1",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 33,
+              "end": 110,
+              "representative": false,
+              "hmmStart": 3,
+              "hmmEnd": 81,
+              "hmmLength": 81,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 3.8e-25,
+              "score": 99.0,
+              "envelopeStart": 31,
+              "envelopeEnd": 112,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 33,
+                  "end": 110,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.8e-25,
+          "score": 99.0,
+          "model-ac": "PF03979"
+        },
+        {
+          "signature": {
+            "accession": "NF004208",
+            "name": "PRK05658.1",
+            "description": "RNA polymerase sigma factor RpoD",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 21,
+              "end": 641,
+              "representative": true,
+              "hmmStart": 11,
+              "hmmEnd": 630,
+              "hmmLength": 631,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 0.0,
+              "score": 924.7,
+              "envelopeStart": 11,
+              "envelopeEnd": 642,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 21,
+                  "end": 641,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 925.1,
+          "model-ac": "NF004208"
+        },
+        {
+          "signature": {
+            "accession": "PF04545",
+            "name": "Sigma70_r4",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007630",
+              "name": "RNA_pol_sigma70_r4",
+              "description": "RNA polymerase sigma-70 region 4",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 577,
+              "end": 629,
+              "representative": true,
+              "hmmStart": 2,
+              "hmmEnd": 50,
+              "hmmLength": 50,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 1.2e-15,
+              "score": 68.1,
+              "envelopeStart": 576,
+              "envelopeEnd": 629,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 577,
+                  "end": 629,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.7e-18,
+          "score": 77.1,
+          "model-ac": "PF04545"
+        },
+        {
+          "signature": {
+            "accession": "PF04546",
+            "name": "Sigma70_ner",
+            "description": "Sigma-70, non-essential region",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007631",
+              "name": "RNA_pol_sigma_70_non-ess",
+              "description": "RNA polymerase sigma factor 70, non-essential domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 169,
+              "end": 377,
+              "representative": true,
+              "hmmStart": 2,
+              "hmmEnd": 210,
+              "hmmLength": 210,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 1.1e-61,
+              "score": 220.0,
+              "envelopeStart": 168,
+              "envelopeEnd": 377,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 169,
+                  "end": 377,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.1e-61,
+          "score": 220.0,
+          "model-ac": "PF04546"
+        },
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 408,
+              "end": 478,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 71,
+              "hmmLength": 71,
+              "hmmBounds": "COMPLETE",
+              "evalue": 4.4e-20,
+              "score": 82.5,
+              "envelopeStart": 408,
+              "envelopeEnd": 478,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 408,
+                  "end": 478,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.2e-20,
+          "score": 83.5,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "PF04539",
+            "name": "Sigma70_r3",
+            "description": "Sigma-70 region 3",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007624",
+              "name": "RNA_pol_sigma70_r3",
+              "description": "RNA polymerase sigma-70 region 3",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 487,
+              "end": 563,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 77,
+              "hmmLength": 78,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 2.1e-23,
+              "score": 93.5,
+              "envelopeStart": 487,
+              "envelopeEnd": 564,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 487,
+                  "end": 563,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.1e-23,
+          "score": 93.5,
+          "model-ac": "PF04539"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02393",
+            "name": "RpoD_Cterm",
+            "description": "RNA polymerase sigma factor RpoD",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR012760",
+              "name": "RNA_pol_sigma_RpoD_C",
+              "description": "RNA polymerase sigma factor RpoD, C-terminal",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 404,
+              "end": 640,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 237,
+              "hmmLength": 238,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1.6e-115,
+              "score": 396.2,
+              "envelopeStart": 404,
+              "envelopeEnd": 641,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 404,
+                  "end": 640,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.6e-115,
+          "score": 396.2,
+          "model-ac": "TIGR02393"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_200915120.1",
+          "id": "WP_200915120.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MGNSLALPVITAGDSIESYIHRVNAIPMLTVEEEVELATRLQQESDLEAAGRLVMSHLRVVVSIARGYAGYGLPQADLIQEGNIGLMKAVKRFEPDRGVRLFSFAVHWIKAEIHEYILRNWRLVRIATTKAQRKLFFNLRSMKKSFAALTHAQAKEIADDLGVKPEEVLEMETRMTGQDIALMADQDDDEGGFAPIDWLADHDAEPTKQLERRALDRLQSDGLREALDTLDERSRRIVETRWLADEGKGLTLHELAAEYSVSAERIRQIEVKALQKMRSALVPVAA",
+      "md5": "c039d4dddc27ee1fc13bda29509eea2d",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF04545",
+            "name": "Sigma70_r4",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007630",
+              "name": "RNA_pol_sigma70_r4",
+              "description": "RNA polymerase sigma-70 region 4",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 226,
+              "end": 278,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 49,
+              "hmmLength": 50,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1.8e-12,
+              "score": 57.9,
+              "envelopeStart": 226,
+              "envelopeEnd": 279,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 226,
+                  "end": 278,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 5.4e-15,
+          "score": 66.0,
+          "model-ac": "PF04545"
+        },
+        {
+          "signature": {
+            "accession": "NF005143",
+            "name": "PRK06596.1",
+            "description": "RNA polymerase factor sigma-32",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 5,
+              "end": 281,
+              "representative": true,
+              "hmmStart": 5,
+              "hmmEnd": 281,
+              "hmmLength": 285,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 3e-123,
+              "score": 422.4,
+              "envelopeStart": 1,
+              "envelopeEnd": 285,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 5,
+                  "end": 281,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.7e-123,
+          "score": 422.5,
+          "model-ac": "NF005143"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02392",
+            "name": "rpoH_proteo",
+            "description": "RNA polymerase sigma factor RpoH",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR012759",
+              "name": "RNA_pol_sigma_RpoH_proteobac",
+              "description": "RNA polymerase sigma factor RpoH, proteobacteria",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 15,
+              "end": 281,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 268,
+              "hmmLength": 270,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 1.7e-118,
+              "score": 406.7,
+              "envelopeStart": 14,
+              "envelopeEnd": 283,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 15,
+                  "end": 281,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.5e-118,
+          "score": 406.9,
+          "model-ac": "TIGR02392"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 48,
+              "end": 281,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 165,
+              "hmmLength": 165,
+              "hmmBounds": "COMPLETE",
+              "evalue": 3.8e-27,
+              "score": 106.4,
+              "envelopeStart": 48,
+              "envelopeEnd": 281,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 48,
+                  "end": 281,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.3e-27,
+          "score": 107.1,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 53,
+              "end": 122,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 70,
+              "hmmLength": 71,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 9.2e-15,
+              "score": 65.5,
+              "envelopeStart": 53,
+              "envelopeEnd": 123,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 53,
+                  "end": 122,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.8e-15,
+          "score": 66.7,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "PF00140",
+            "name": "Sigma70_r1_2",
+            "description": "Sigma-70 factor, region 1.2",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR009042",
+              "name": "RNA_pol_sigma70_r1_2",
+              "description": "RNA polymerase sigma-70 region 1.2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 14,
+              "end": 44,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 31,
+              "hmmLength": 34,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1e-05,
+              "score": 36.6,
+              "envelopeStart": 14,
+              "envelopeEnd": 47,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 14,
+                  "end": 44,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 4.8e-06,
+          "score": 37.7,
+          "model-ac": "PF00140"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_200916001.1",
+          "id": "WP_200916001.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MKQSLQLRLSQQLNLTPQLQQSIKLLQLSTLDFQQEVERFLAENPLLERGEDNHASSEGEGSAEAPTENSSSDDAPASESAFDNDDWGWEGSGGGARGSGDDDDDFDPASNIARELTLREHLLAQAGLLPIPLRDRAALTWLIDALDDDGFLTQPLEEILALLPAELAGEFEFESDDLAIALARLKQLEPLGVGAKDMAESLALQLAVLPLSDARQLALGIVRDSLDLLAARDYTRLKRRLKCDETELKAAQALIVSLNPRPGAQWSDESSHYVVADVLVSKLKGQWRVRLNDAARPKLRVNRMYADILQRSDGGSMARELQEAKWLVKSVQQRFDTILRVGQAIVDKQSAFFEHGEIAMRPLVLRDIASELDLHESTVSRVTTQKYMLTPRGIFEYKYFFGSHVETEAGGEASATAIKAQIRQLIQQEDKQKPLSDSAIADALAGQGVVVARRTVAKYREAMQISPVNLRKCL",
+      "md5": "138c601078caf3f4b19874b64913ac2e",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF00309",
+            "name": "Sigma54_AID",
+            "description": "Sigma-54 factor, Activator interacting domain (AID)",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR000394",
+              "name": "RNA_pol_sigma_54",
+              "description": "RNA polymerase sigma factor 54",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 4,
+              "end": 48,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 45,
+              "hmmLength": 46,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1.4e-13,
+              "score": 61.7,
+              "envelopeStart": 4,
+              "envelopeEnd": 49,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 4,
+                  "end": 48,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.4e-13,
+          "score": 61.7,
+          "model-ac": "PF00309"
+        },
+        {
+          "signature": {
+            "accession": "NF009118",
+            "name": "PRK12469.1",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 472,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 479,
+              "hmmLength": 483,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 509.9,
+              "envelopeStart": 1,
+              "envelopeEnd": 474,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 472,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 510.0,
+          "model-ac": "NF009118"
+        },
+        {
+          "signature": {
+            "accession": "PF04552",
+            "name": "Sigma54_DBD",
+            "description": "Sigma-54, DNA binding domain",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007634",
+              "name": "RNA_pol_sigma_54_DNA-bd",
+              "description": "RNA polymerase sigma factor 54, DNA-binding",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 318,
+              "end": 472,
+              "representative": true,
+              "hmmStart": 5,
+              "hmmEnd": 159,
+              "hmmLength": 160,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 3.9e-61,
+              "score": 216.9,
+              "envelopeStart": 315,
+              "envelopeEnd": 473,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 318,
+                  "end": 472,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.4e-61,
+          "score": 217.6,
+          "model-ac": "PF04552"
+        },
+        {
+          "signature": {
+            "accession": "NF004595",
+            "name": "PRK05932.1-2",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 473,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 482,
+              "hmmLength": 484,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 565.0,
+              "envelopeStart": 1,
+              "envelopeEnd": 474,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 473,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 565.2,
+          "model-ac": "NF004595"
+        },
+        {
+          "signature": {
+            "accession": "NF004598",
+            "name": "PRK05932.1-5",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 474,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 504,
+              "hmmLength": 504,
+              "hmmBounds": "COMPLETE",
+              "evalue": 0.0,
+              "score": 660.1,
+              "envelopeStart": 1,
+              "envelopeEnd": 474,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 474,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 669.5,
+          "model-ac": "NF004598"
+        },
+        {
+          "signature": {
+            "accession": "PF04963",
+            "name": "Sigma54_CBD",
+            "description": "Sigma-54 factor, core binding domain",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007046",
+              "name": "RNA_pol_sigma_54_core-bd",
+              "description": "RNA polymerase sigma factor 54, core-binding domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 110,
+              "end": 305,
+              "representative": true,
+              "hmmStart": 4,
+              "hmmEnd": 181,
+              "hmmLength": 181,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 5.1e-48,
+              "score": 174.7,
+              "envelopeStart": 107,
+              "envelopeEnd": 305,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 110,
+                  "end": 305,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 5.1e-48,
+          "score": 174.7,
+          "model-ac": "PF04963"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02395",
+            "name": "rpoN_sigma",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR000394",
+              "name": "RNA_pol_sigma_54",
+              "description": "RNA polymerase sigma factor 54",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 9,
+              "end": 472,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 434,
+              "hmmLength": 434,
+              "hmmBounds": "COMPLETE",
+              "evalue": 2.4e-129,
+              "score": 443.7,
+              "envelopeStart": 9,
+              "envelopeEnd": 472,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 9,
+                  "end": 472,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.1e-129,
+          "score": 443.9,
+          "model-ac": "TIGR02395"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_200916434.1",
+          "id": "WP_200916434.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MTTSLQPVHALVPGANLEAYVHSVNSIPLLSPEQERELAERLFYQQDLEAARQMVLAHLRFVVHIAKSYSGYGLAQADLIQEGNVGLMKAVKRFNPEMGVRLVSFAVHWIKAEIHEFILRNWRIVKVATTKAQRKLFFNLRSQKKRLAWLNNEEVHRVAESLGVEPREVREMESRLTGQDMAFDPAADADDESAYQSPAHYLEDHRYDPARQLEDADWSDSSSANLHEALEGLDERSRDILQQRWLSEEKATLHDLAEKYNVSAERIRQLEKNAMSKLKGRILA",
+      "md5": "d40ecc598d4fb6cca09f5e79fe0e32bb",
+      "matches": [
+        {
+          "signature": {
+            "accession": "NF005143",
+            "name": "PRK06596.1",
+            "description": "RNA polymerase factor sigma-32",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 8,
+              "end": 282,
+              "representative": true,
+              "hmmStart": 7,
+              "hmmEnd": 281,
+              "hmmLength": 285,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 6e-130,
+              "score": 444.4,
+              "envelopeStart": 1,
+              "envelopeEnd": 284,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 8,
+                  "end": 282,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 5.5e-130,
+          "score": 444.5,
+          "model-ac": "NF005143"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 49,
+              "end": 280,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 163,
+              "hmmLength": 165,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1.8e-27,
+              "score": 107.4,
+              "envelopeStart": 49,
+              "envelopeEnd": 282,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 49,
+                  "end": 280,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 9.5e-28,
+          "score": 108.3,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "PF04545",
+            "name": "Sigma70_r4",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007630",
+              "name": "RNA_pol_sigma70_r4",
+              "description": "RNA polymerase sigma-70 region 4",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 229,
+              "end": 279,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 49,
+              "hmmLength": 50,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1.7e-12,
+              "score": 57.9,
+              "envelopeStart": 229,
+              "envelopeEnd": 280,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 229,
+                  "end": 279,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 7.1e-13,
+          "score": 59.2,
+          "model-ac": "PF04545"
+        },
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 54,
+              "end": 123,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 70,
+              "hmmLength": 71,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 5e-14,
+              "score": 63.1,
+              "envelopeStart": 54,
+              "envelopeEnd": 124,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 54,
+                  "end": 123,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.1e-14,
+          "score": 64.3,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "PF00140",
+            "name": "Sigma70_r1_2",
+            "description": "Sigma-70 factor, region 1.2",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR009042",
+              "name": "RNA_pol_sigma70_r1_2",
+              "description": "RNA polymerase sigma-70 region 1.2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 17,
+              "end": 41,
+              "representative": false,
+              "hmmStart": 3,
+              "hmmEnd": 27,
+              "hmmLength": 34,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 0.026,
+              "score": 25.8,
+              "envelopeStart": 16,
+              "envelopeEnd": 42,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 17,
+                  "end": 41,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0094,
+          "score": 27.2,
+          "model-ac": "PF00140"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02392",
+            "name": "rpoH_proteo",
+            "description": "RNA polymerase sigma factor RpoH",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR012759",
+              "name": "RNA_pol_sigma_RpoH_proteobac",
+              "description": "RNA polymerase sigma factor RpoH, proteobacteria",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 16,
+              "end": 282,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 268,
+              "hmmLength": 270,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 3.9e-120,
+              "score": 412.0,
+              "envelopeStart": 15,
+              "envelopeEnd": 284,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 16,
+                  "end": 282,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.5e-120,
+          "score": 412.2,
+          "model-ac": "TIGR02392"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_003084510.1",
+          "id": "WP_003084510.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MTNQAYPMALVSQDSLDSYIRSVNGYPMLSADEERELAERLHYKGDIDAAKGLILSHLRFVVHVARGYSGYGLPMADLVQEGNIGLMKAVKRFNPEMGVRLVSFAVHWIKAEIHEYVLRNWRIVKIATTKAQRKLFFNLRKSKKRLGWFNNGEVETVARELGVEPAEVREMESRLAAQDAAFEMSAEDDENGMAYTAPVLYLEDKHSDLADNLEAENWEAHTTQRLSMALASLDERSQHIVRARWLDDDNKTTLQDLAEMYGVSAERIRQLEKNAMRKLKEAVGEF",
+      "md5": "5f6c6ad2c242f9c2649c91f3b925fb80",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF04545",
+            "name": "Sigma70_r4",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007630",
+              "name": "RNA_pol_sigma70_r4",
+              "description": "RNA polymerase sigma-70 region 4",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 229,
+              "end": 281,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 50,
+              "hmmLength": 50,
+              "hmmBounds": "COMPLETE",
+              "evalue": 2.3e-12,
+              "score": 57.6,
+              "envelopeStart": 229,
+              "envelopeEnd": 281,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 229,
+                  "end": 281,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 6.7e-13,
+          "score": 59.2,
+          "model-ac": "PF04545"
+        },
+        {
+          "signature": {
+            "accession": "PF00140",
+            "name": "Sigma70_r1_2",
+            "description": "Sigma-70 factor, region 1.2",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR009042",
+              "name": "RNA_pol_sigma70_r1_2",
+              "description": "RNA polymerase sigma-70 region 1.2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 14,
+              "end": 40,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 27,
+              "hmmLength": 34,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.00019,
+              "score": 32.6,
+              "envelopeStart": 14,
+              "envelopeEnd": 42,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 14,
+                  "end": 40,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 7.8e-05,
+          "score": 33.8,
+          "model-ac": "PF00140"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 48,
+              "end": 282,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 164,
+              "hmmLength": 165,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 3.6e-30,
+              "score": 116.2,
+              "envelopeStart": 48,
+              "envelopeEnd": 283,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 48,
+                  "end": 282,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.5e-30,
+          "score": 116.7,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 53,
+              "end": 122,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 70,
+              "hmmLength": 71,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 6.8e-15,
+              "score": 65.9,
+              "envelopeStart": 53,
+              "envelopeEnd": 123,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 53,
+                  "end": 122,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.4e-15,
+          "score": 66.9,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02392",
+            "name": "rpoH_proteo",
+            "description": "RNA polymerase sigma factor RpoH",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR012759",
+              "name": "RNA_pol_sigma_RpoH_proteobac",
+              "description": "RNA polymerase sigma factor RpoH, proteobacteria",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 15,
+              "end": 283,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 268,
+              "hmmLength": 270,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 2.5e-122,
+              "score": 419.2,
+              "envelopeStart": 14,
+              "envelopeEnd": 285,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 15,
+                  "end": 283,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.2e-122,
+          "score": 419.4,
+          "model-ac": "TIGR02392"
+        },
+        {
+          "signature": {
+            "accession": "NF005143",
+            "name": "PRK06596.1",
+            "description": "RNA polymerase factor sigma-32",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 284,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 282,
+              "hmmLength": 285,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 451.1,
+              "envelopeStart": 1,
+              "envelopeEnd": 286,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 284,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 451.2,
+          "model-ac": "NF005143"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_000184359.1",
+          "id": "WP_000184359.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MKQGLQLRLSQQLAMTPQLQQAIRLLQLSTLELQQELQQALESNPLLEQIDTHEEIDTRETQDSETLDTADALEQKEMPEELPLDASWDTIYTAGTPSGTSGDYIDDELPVYQGETTQTLQDYLMWQVELTPFSDTDRAIATSIVDAVDETGYLTVPLEDILESIGDEEIDIDEVEAVLKRIQRFDPVGVAAKDLRDCLLIQLSQFDKTTPWLEEARLIISDHLDLLANHDFRTLMRVTRLKEDVLKEAVNLIQSLDPRPGQSIQTGEPEYVIPDVLVRKHNGHWTVELNSDSIPRLQINQHYASMCNNARNDGDSQFIRSNLQDAKWLIKSLESRNDTLLRVSRCIVEQQQAFFEQGEEYMKPMVLADIAQAVEMHESTISRVTTQKYLHSPRGIFELKYFFSSHVNTEGGGEASSTAIRALVKKLIAAENPAKPLSDSKLTSLLSEQGIMVARRTVAKYRESLSIPPSNQRKQLV",
+      "md5": "cd22b32ea00575d7ed99e863217ced58",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF04552",
+            "name": "Sigma54_DBD",
+            "description": "Sigma-54, DNA binding domain",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007634",
+              "name": "RNA_pol_sigma_54_DNA-bd",
+              "description": "RNA polymerase sigma factor 54, DNA-binding",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 317,
+              "end": 475,
+              "representative": true,
+              "hmmStart": 2,
+              "hmmEnd": 160,
+              "hmmLength": 160,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 5.1e-67,
+              "score": 236.1,
+              "envelopeStart": 316,
+              "envelopeEnd": 475,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 317,
+                  "end": 475,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.7e-67,
+          "score": 237.0,
+          "model-ac": "PF04552"
+        },
+        {
+          "signature": {
+            "accession": "PF00309",
+            "name": "Sigma54_AID",
+            "description": "Sigma-54 factor, Activator interacting domain (AID)",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR000394",
+              "name": "RNA_pol_sigma_54",
+              "description": "RNA polymerase sigma factor 54",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 5,
+              "end": 48,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 45,
+              "hmmLength": 46,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 2.9e-13,
+              "score": 60.7,
+              "envelopeStart": 4,
+              "envelopeEnd": 49,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 5,
+                  "end": 48,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.1e-13,
+          "score": 62.0,
+          "model-ac": "PF00309"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02395",
+            "name": "rpoN_sigma",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR000394",
+              "name": "RNA_pol_sigma_54",
+              "description": "RNA polymerase sigma factor 54",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 9,
+              "end": 474,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 434,
+              "hmmLength": 434,
+              "hmmBounds": "COMPLETE",
+              "evalue": 0.0,
+              "score": 550.1,
+              "envelopeStart": 9,
+              "envelopeEnd": 474,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 9,
+                  "end": 474,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 550.3,
+          "model-ac": "TIGR02395"
+        },
+        {
+          "signature": {
+            "accession": "NF004597",
+            "name": "PRK05932.1-4",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 477,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 477,
+              "hmmLength": 477,
+              "hmmBounds": "COMPLETE",
+              "evalue": 0.0,
+              "score": 1052.9,
+              "envelopeStart": 1,
+              "envelopeEnd": 477,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 477,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 1053.1,
+          "model-ac": "NF004597"
+        },
+        {
+          "signature": {
+            "accession": "NF009118",
+            "name": "PRK12469.1",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 476,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 481,
+              "hmmLength": 483,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 492.6,
+              "envelopeStart": 1,
+              "envelopeEnd": 477,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 476,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 492.8,
+          "model-ac": "NF009118"
+        },
+        {
+          "signature": {
+            "accession": "PF04963",
+            "name": "Sigma54_CBD",
+            "description": "Sigma-54 factor, core binding domain",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007046",
+              "name": "RNA_pol_sigma_54_core-bd",
+              "description": "RNA polymerase sigma factor 54, core-binding domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 116,
+              "end": 303,
+              "representative": true,
+              "hmmStart": 8,
+              "hmmEnd": 181,
+              "hmmLength": 181,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 1.2e-60,
+              "score": 216.0,
+              "envelopeStart": 112,
+              "envelopeEnd": 303,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 116,
+                  "end": 303,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.2e-60,
+          "score": 216.0,
+          "model-ac": "PF04963"
+        },
+        {
+          "signature": {
+            "accession": "NF004595",
+            "name": "PRK05932.1-2",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 476,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 483,
+              "hmmLength": 484,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 738.2,
+              "envelopeStart": 1,
+              "envelopeEnd": 477,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 476,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 738.4,
+          "model-ac": "NF004595"
+        }
+      ],
+      "xref": [
+        {
+          "name": "NP_417669.1",
+          "id": "NP_417669.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MSGKAQQQSRLKELIARGREQGYLTYAEVNDHLPEDISDPEQVEDIIRMINDMGINVFETAPDADALLLAEADTDEAAAEEAAAALAAVESDIGRTTDPVRMYMREMGTVELLTREGEIEIAKRIEEGIREVMSAIAQFPGTVDSILADYNRIVAEGGRLSDVLSGYIDPDDGSLPAEEVEPVNLKDDSADSKEKDDEEEESDDSSDSDDEGDGGPDPEEARLRFTAVSEQLDKAKKALKKHGRGSKQATAELTGLAELFMPIKLVPKQFDALVARVRSALEGVRAQERAIMQLCVRDARMPRADFLRLFPNHETDEKWVDSVLKSKPKYAEAIERLRDDILRNQQKLAALESEVELTVAEIKEINRAMSIGEAKARRAKKEMVEANLRLVISIAKKYTNRGLQFLDLIQEGNIGLMKAVDKFEYRRGYKFSTYATWWIRQAITRSIADQARTIRIPVHMIETINKLNRISRQMLQEMGREPTPEELGERMDMPEDKIRKVLKIAKEPISMETPIGDDEDSHLGDFIEDSTMQSPIEMATSESLKESTREVLAGLTAREAKVLRMRFGIDMNTDHTLEEVGKQFDVTRERIRQIEAKALRKLRHPSRSEHLRSFLDE",
+      "md5": "f4e3bef0593c9fb7908f78fefc3d7c60",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF04546",
+            "name": "Sigma70_ner",
+            "description": "Sigma-70, non-essential region",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007631",
+              "name": "RNA_pol_sigma_70_non-ess",
+              "description": "RNA polymerase sigma factor 70, non-essential domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 139,
+              "end": 352,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 210,
+              "hmmLength": 210,
+              "hmmBounds": "COMPLETE",
+              "evalue": 2.1e-63,
+              "score": 225.6,
+              "envelopeStart": 139,
+              "envelopeEnd": 352,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 139,
+                  "end": 352,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.1e-63,
+          "score": 225.6,
+          "model-ac": "PF04546"
+        },
+        {
+          "signature": {
+            "accession": "PF00140",
+            "name": "Sigma70_r1_2",
+            "description": "Sigma-70 factor, region 1.2",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR009042",
+              "name": "RNA_pol_sigma70_r1_2",
+              "description": "RNA polymerase sigma-70 region 1.2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 98,
+              "end": 128,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 31,
+              "hmmLength": 34,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 3e-09,
+              "score": 48.0,
+              "envelopeStart": 98,
+              "envelopeEnd": 131,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 98,
+                  "end": 128,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 5.8e-10,
+          "score": 50.3,
+          "model-ac": "PF00140"
+        },
+        {
+          "signature": {
+            "accession": "PF04539",
+            "name": "Sigma70_r3",
+            "description": "Sigma-70 region 3",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007624",
+              "name": "RNA_pol_sigma70_r3",
+              "description": "RNA polymerase sigma-70 region 3",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 462,
+              "end": 538,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 77,
+              "hmmLength": 78,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1.5e-26,
+              "score": 103.6,
+              "envelopeStart": 462,
+              "envelopeEnd": 539,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 462,
+                  "end": 538,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.5e-26,
+          "score": 103.6,
+          "model-ac": "PF04539"
+        },
+        {
+          "signature": {
+            "accession": "PF03979",
+            "name": "Sigma70_r1_1",
+            "description": "Sigma-70 factor, region 1.1",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007127",
+              "name": "RNA_pol_sigma_70_r1_1",
+              "description": "RNA polymerase sigma factor 70, region 1.1",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 6,
+              "end": 83,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 78,
+              "hmmLength": 81,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 3.3e-26,
+              "score": 102.4,
+              "envelopeStart": 5,
+              "envelopeEnd": 85,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 6,
+                  "end": 83,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.3e-26,
+          "score": 102.4,
+          "model-ac": "PF03979"
+        },
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 383,
+              "end": 453,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 71,
+              "hmmLength": 71,
+              "hmmBounds": "COMPLETE",
+              "evalue": 3.4e-20,
+              "score": 82.9,
+              "envelopeStart": 383,
+              "envelopeEnd": 453,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 383,
+                  "end": 453,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.6e-20,
+          "score": 84.0,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02393",
+            "name": "RpoD_Cterm",
+            "description": "RNA polymerase sigma factor RpoD",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR012760",
+              "name": "RNA_pol_sigma_RpoD_C",
+              "description": "RNA polymerase sigma factor RpoD, C-terminal",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 379,
+              "end": 615,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 237,
+              "hmmLength": 238,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 3.8e-118,
+              "score": 404.8,
+              "envelopeStart": 379,
+              "envelopeEnd": 616,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 379,
+                  "end": 615,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2e-118,
+          "score": 405.7,
+          "model-ac": "TIGR02393"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 379,
+              "end": 604,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 163,
+              "hmmLength": 165,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 1.6e-33,
+              "score": 127.1,
+              "envelopeStart": 378,
+              "envelopeEnd": 605,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 379,
+                  "end": 604,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.6e-33,
+          "score": 127.1,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "NF004208",
+            "name": "PRK05658.1",
+            "description": "RNA polymerase sigma factor RpoD",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 4,
+              "end": 617,
+              "representative": true,
+              "hmmStart": 20,
+              "hmmEnd": 631,
+              "hmmLength": 631,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 899.2,
+              "envelopeStart": 1,
+              "envelopeEnd": 617,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 4,
+                  "end": 617,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 899.4,
+          "model-ac": "NF004208"
+        },
+        {
+          "signature": {
+            "accession": "PF04545",
+            "name": "Sigma70_r4",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007630",
+              "name": "RNA_pol_sigma70_r4",
+              "description": "RNA polymerase sigma-70 region 4",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 551,
+              "end": 604,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 50,
+              "hmmLength": 50,
+              "hmmBounds": "COMPLETE",
+              "evalue": 1e-14,
+              "score": 65.1,
+              "envelopeStart": 551,
+              "envelopeEnd": 604,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 551,
+                  "end": 604,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.1e-16,
+          "score": 70.5,
+          "model-ac": "PF04545"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_003085035.1",
+          "id": "WP_003085035.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MLTQEQDQQLVERVQRGDKRAFDLLVLKYQHKILGLIVRFVHDAQEAQDVAQEAFIKAYRALGNFRGDSAFYTWLYRIAINTAKNHLVARGRRPPDSDVTAEDAEFFEGDHALKDIESPERAMLRDEIEATVHQTIQQLPEDLRTALTLREFEGLSYEDIATVMQCPVGTVRSRIFRAREAIDKALQPLLREA",
+      "md5": "86dda65e985ac48ceba67694921bb7c1",
+      "matches": [
+        {
+          "signature": {
+            "accession": "TIGR02939",
+            "name": "RpoE_Sigma70",
+            "description": "RNA polymerase sigma factor RpoE",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014286",
+              "name": "RNA_pol_sigma70_RpoE",
+              "description": "RNA polymerase sigma-70 RpoE type",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 3,
+              "end": 190,
+              "representative": true,
+              "hmmStart": 3,
+              "hmmEnd": 190,
+              "hmmLength": 190,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 9.5e-95,
+              "score": 327.5,
+              "envelopeStart": 1,
+              "envelopeEnd": 190,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 3,
+                  "end": 190,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 8.5e-95,
+          "score": 327.6,
+          "model-ac": "TIGR02939"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 21,
+              "end": 186,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 165,
+              "hmmLength": 165,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 7.9e-27,
+              "score": 105.3,
+              "envelopeStart": 20,
+              "envelopeEnd": 186,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 21,
+                  "end": 186,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 6.6e-27,
+          "score": 105.6,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 25,
+              "end": 92,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 70,
+              "hmmLength": 71,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1.5e-14,
+              "score": 64.8,
+              "envelopeStart": 25,
+              "envelopeEnd": 93,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 25,
+                  "end": 92,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 8e-15,
+          "score": 65.7,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "PF08281",
+            "name": "Sigma70_r4_2",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR013249",
+              "name": "RNA_pol_sigma70_r4_t2",
+              "description": "RNA polymerase sigma factor 70, region 4 type 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 132,
+              "end": 181,
+              "representative": true,
+              "hmmStart": 4,
+              "hmmEnd": 53,
+              "hmmLength": 54,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 8.3e-16,
+              "score": 68.7,
+              "envelopeStart": 129,
+              "envelopeEnd": 182,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 132,
+                  "end": 181,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.4e-16,
+          "score": 69.9,
+          "model-ac": "PF08281"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_003085543.1",
+          "id": "WP_003085543.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MDQNPQSQLKQLVLRGKEQGYLTYAEVNDHLPAEIVDSEQVEDIIQMINDMGIKVVETAPDADDLALSDDTTITDEDAAEAAAAALSSVESEIGRTTDPVRMYMREMGTVELLTREGEIDIAKRIEDGINQVQSAIAEYPGTIPYILEQFDRVQAEELRLTDLISGFVDPNDMETEAPTATHIGSELSEADLADEDDAVVEDEDEDEDEDGDGESSDSEEEVGIDPELAREKFNELRGKFQNLQLAVNEFGRDSHQASEASDLVLDIFREFRLTPKQFDHLVETLRTSMDRVRTQERLVMKAVVEVAKMPKKSFIALFTGNESNEEWLDKVLASDKPYVAKVREQEEEIRRSIQKLQMIEQETSLSVERIKDISRRMSIGEAKARRAKKEMVEANLRLVISIAKKYTNRGLQFLDLIQEGNIGLMKAVDKFEYRRGYKFSTYATWWIRQAITRSIADQARTIRIPVHMIETINKLNRISRQMLQEMGREPLPEELAERMQMPEDKIRKVLKIAKEPISMETPIGDDEDSHLGDFIEDTTLELPLDSATATSLKAATRDVLAGLTPREAKVLRMRFGIDMNTDHTLEEVGKQFDVTRERIRQIEAKALRKLRHPSRSEVLRSFLDE",
+      "md5": "2cb7b83afd7d60f4057a7a31bf3482ab",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 391,
+              "end": 461,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 71,
+              "hmmLength": 71,
+              "hmmBounds": "COMPLETE",
+              "evalue": 3.5e-20,
+              "score": 82.9,
+              "envelopeStart": 391,
+              "envelopeEnd": 461,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 391,
+                  "end": 461,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.5e-20,
+          "score": 82.9,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "PF04539",
+            "name": "Sigma70_r3",
+            "description": "Sigma-70 region 3",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007624",
+              "name": "RNA_pol_sigma70_r3",
+              "description": "RNA polymerase sigma-70 region 3",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 470,
+              "end": 545,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 76,
+              "hmmLength": 78,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 3.7e-25,
+              "score": 99.1,
+              "envelopeStart": 470,
+              "envelopeEnd": 547,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 470,
+                  "end": 545,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.7e-25,
+          "score": 99.1,
+          "model-ac": "PF04539"
+        },
+        {
+          "signature": {
+            "accession": "PF04545",
+            "name": "Sigma70_r4",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007630",
+              "name": "RNA_pol_sigma70_r4",
+              "description": "RNA polymerase sigma-70 region 4",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 559,
+              "end": 612,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 50,
+              "hmmLength": 50,
+              "hmmBounds": "COMPLETE",
+              "evalue": 2e-15,
+              "score": 67.3,
+              "envelopeStart": 559,
+              "envelopeEnd": 612,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 559,
+                  "end": 612,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2e-15,
+          "score": 67.3,
+          "model-ac": "PF04545"
+        },
+        {
+          "signature": {
+            "accession": "NF004208",
+            "name": "PRK05658.1",
+            "description": "RNA polymerase sigma factor RpoD",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 3,
+              "end": 625,
+              "representative": true,
+              "hmmStart": 21,
+              "hmmEnd": 631,
+              "hmmLength": 631,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 914.5,
+              "envelopeStart": 1,
+              "envelopeEnd": 625,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 3,
+                  "end": 625,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 914.6,
+          "model-ac": "NF004208"
+        },
+        {
+          "signature": {
+            "accession": "PF03979",
+            "name": "Sigma70_r1_1",
+            "description": "Sigma-70 factor, region 1.1",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007127",
+              "name": "RNA_pol_sigma_70_r1_1",
+              "description": "RNA polymerase sigma factor 70, region 1.1",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 5,
+              "end": 80,
+              "representative": false,
+              "hmmStart": 3,
+              "hmmEnd": 80,
+              "hmmLength": 81,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 2.8e-25,
+              "score": 99.4,
+              "envelopeStart": 3,
+              "envelopeEnd": 83,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 5,
+                  "end": 80,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.8e-25,
+          "score": 99.4,
+          "model-ac": "PF03979"
+        },
+        {
+          "signature": {
+            "accession": "PF04546",
+            "name": "Sigma70_ner",
+            "description": "Sigma-70, non-essential region",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007631",
+              "name": "RNA_pol_sigma_70_non-ess",
+              "description": "RNA polymerase sigma factor 70, non-essential domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 139,
+              "end": 360,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 210,
+              "hmmLength": 210,
+              "hmmBounds": "COMPLETE",
+              "evalue": 6.3e-64,
+              "score": 227.3,
+              "envelopeStart": 139,
+              "envelopeEnd": 360,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 139,
+                  "end": 360,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 6.3e-64,
+          "score": 227.3,
+          "model-ac": "PF04546"
+        },
+        {
+          "signature": {
+            "accession": "PF00140",
+            "name": "Sigma70_r1_2",
+            "description": "Sigma-70 factor, region 1.2",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR009042",
+              "name": "RNA_pol_sigma70_r1_2",
+              "description": "RNA polymerase sigma-70 region 1.2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 98,
+              "end": 128,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 31,
+              "hmmLength": 34,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1.3e-08,
+              "score": 46.0,
+              "envelopeStart": 98,
+              "envelopeEnd": 131,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 98,
+                  "end": 128,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1e-09,
+          "score": 49.4,
+          "model-ac": "PF00140"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 387,
+              "end": 612,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 163,
+              "hmmLength": 165,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 1.7e-33,
+              "score": 127.0,
+              "envelopeStart": 386,
+              "envelopeEnd": 613,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 387,
+                  "end": 612,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.7e-33,
+          "score": 127.0,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02393",
+            "name": "RpoD_Cterm",
+            "description": "RNA polymerase sigma factor RpoD",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR012760",
+              "name": "RNA_pol_sigma_RpoD_C",
+              "description": "RNA polymerase sigma factor RpoD, C-terminal",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 387,
+              "end": 623,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 237,
+              "hmmLength": 238,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 3.6e-116,
+              "score": 398.3,
+              "envelopeStart": 387,
+              "envelopeEnd": 624,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 387,
+                  "end": 623,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.6e-116,
+          "score": 398.3,
+          "model-ac": "TIGR02393"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_000372618.1",
+          "id": "WP_000372618.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MKPSLVLKMGQQLTMTPQLQQAIRLLQLSTLDLQQEIQEALESNPMLERQEDGDDFDNSDPLADGAEQAASAPQESPLQESATPSVESLDDDQWSERIPSELPVDTAWEDIYQTSASSLPSNDDDEWDFTARTSSGESLHSHLLWQVNLAPMSDTDRMIAVTIIDSINNDGYLEESLEEILAAIDPELDVELDEVEVVLRRIQQLEPAGIGARNLRECLLLQLRQLPSTTPWLNEALRLVSDYLDLLGGRDYSQLMRRMKLKEDELRQVIELIQCLHPRPGSQIESSEAEYIVPDVIVRKDNERWLVELNQEAMPRLRVNATYAGMVRRADSSADNTFMRNQLQEARWFIKSLQSRNETLMKVATQIVEHQRGFLDYGEEAMKPLVLHDIAEAVGMHESTISRVTTQKYMHTPRGIFELKYFFSSHVSTAEGGECSSTAIRAIIKKLVAAENAKKPLSDSKIAGLLEAQGIQVARRTVAKYRESLGIAPSSERKRLV",
+      "md5": "5bf60887ecf851fdf77990d038adc04f",
+      "matches": [
+        {
+          "signature": {
+            "accession": "PF00309",
+            "name": "Sigma54_AID",
+            "description": "Sigma-54 factor, Activator interacting domain (AID)",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR000394",
+              "name": "RNA_pol_sigma_54",
+              "description": "RNA polymerase sigma factor 54",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 4,
+              "end": 48,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 45,
+              "hmmLength": 46,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 2.7e-14,
+              "score": 64.0,
+              "envelopeStart": 4,
+              "envelopeEnd": 49,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 4,
+                  "end": 48,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.7e-14,
+          "score": 64.0,
+          "model-ac": "PF00309"
+        },
+        {
+          "signature": {
+            "accession": "PF04552",
+            "name": "Sigma54_DBD",
+            "description": "Sigma-54, DNA binding domain",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007634",
+              "name": "RNA_pol_sigma_54_DNA-bd",
+              "description": "RNA polymerase sigma factor 54, DNA-binding",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 337,
+              "end": 495,
+              "representative": true,
+              "hmmStart": 2,
+              "hmmEnd": 160,
+              "hmmLength": 160,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 2.2e-66,
+              "score": 234.0,
+              "envelopeStart": 336,
+              "envelopeEnd": 495,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 337,
+                  "end": 495,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.4e-66,
+          "score": 234.7,
+          "model-ac": "PF04552"
+        },
+        {
+          "signature": {
+            "accession": "NF004595",
+            "name": "PRK05932.1-2",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 496,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 483,
+              "hmmLength": 484,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 794.4,
+              "envelopeStart": 1,
+              "envelopeEnd": 497,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 496,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 794.6,
+          "model-ac": "NF004595"
+        },
+        {
+          "signature": {
+            "accession": "NF009118",
+            "name": "PRK12469.1",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 1,
+              "end": 496,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 481,
+              "hmmLength": 483,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 526.1,
+              "envelopeStart": 1,
+              "envelopeEnd": 497,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 1,
+                  "end": 496,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 526.3,
+          "model-ac": "NF009118"
+        },
+        {
+          "signature": {
+            "accession": "PF04963",
+            "name": "Sigma54_CBD",
+            "description": "Sigma-54 factor, core binding domain",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007046",
+              "name": "RNA_pol_sigma_54_core-bd",
+              "description": "RNA polymerase sigma factor 54, core-binding domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 129,
+              "end": 323,
+              "representative": true,
+              "hmmStart": 2,
+              "hmmEnd": 181,
+              "hmmLength": 181,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 2e-61,
+              "score": 218.5,
+              "envelopeStart": 128,
+              "envelopeEnd": 323,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 129,
+                  "end": 323,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 8.2e-62,
+          "score": 219.7,
+          "model-ac": "PF04963"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02395",
+            "name": "rpoN_sigma",
+            "description": "RNA polymerase factor sigma-54",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR000394",
+              "name": "RNA_pol_sigma_54",
+              "description": "RNA polymerase sigma factor 54",
+              "type": "FAMILY",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 10,
+              "end": 494,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 434,
+              "hmmLength": 434,
+              "hmmBounds": "C_TERMINAL_COMPLETE",
+              "evalue": 0.0,
+              "score": 529.5,
+              "envelopeStart": 9,
+              "envelopeEnd": 494,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 10,
+                  "end": 494,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 529.7,
+          "model-ac": "TIGR02395"
+        }
+      ],
+      "xref": [
+        {
+          "name": "WP_003094357.1",
+          "id": "WP_003094357.1"
+        }
+      ]
+    },
+    {
+      "sequence": "MEQNPQSQLKLLVTRGKEQGYLTYAEVNDHLPEDIVDSDQIEDIIQMINDMGIQVMEEAPDADDLMLAENTADEDAAEAAAQVLSSVESEIGRTTDPVRMYMREMGTVELLTREGEIDIAKRIEDGINQVQCSVAEYPEAITYLLEQYDRVEAEEARLSDLITGFVDPNAEEDLAPTATHVGSELSQEDLDDDEDEDEEDGDDDSADDDNSIDPELAREKFAELRAQYVVTRDTIKAKGRSHATAQEEILKLSEVFKQFRLVPKQFDYLVNSMRVMMDRVRTQERLIMKLCVEQCKMPKKNFITLFTGNETSDTWFNAAIAMNKPWSEKLHDVSEEVHRALQKLQQIEEETGLTIEQVKDINRRMSIGEAKARRAKKEMVEANLRLVISIAKKYTNRGLQFLDLIQEGNIGLMKAVDKFEYRRGYKFSTYATWWIRQAITRSIADQARTIRIPVHMIETINKLNRISRQMLQEMGREPTPEELAERMLMPEDKIRKVLKIAKEPISMETPIGDDEDSHLGDFIEDTTLELPLDSATTESLRAATHDVLAGLTAREAKVLRMRFGIDMNTDYTLEEVGKQFDVTRERIRQIEAKALRKLRHPSRSEVLRSFLDD",
+      "md5": "76c71bc8c46d1acced17d1ca3625783a",
+      "matches": [
+        {
+          "signature": {
+            "accession": "TIGR02393",
+            "name": "RpoD_Cterm",
+            "description": "RNA polymerase sigma factor RpoD",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR012760",
+              "name": "RNA_pol_sigma_RpoD_C",
+              "description": "RNA polymerase sigma factor RpoD, C-terminal",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 375,
+              "end": 611,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 237,
+              "hmmLength": 238,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 3.7e-116,
+              "score": 398.3,
+              "envelopeStart": 375,
+              "envelopeEnd": 612,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 375,
+                  "end": 611,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.7e-116,
+          "score": 398.3,
+          "model-ac": "TIGR02393"
+        },
+        {
+          "signature": {
+            "accession": "PF03979",
+            "name": "Sigma70_r1_1",
+            "description": "Sigma-70 factor, region 1.1",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007127",
+              "name": "RNA_pol_sigma_70_r1_1",
+              "description": "RNA polymerase sigma factor 70, region 1.1",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 5,
+              "end": 78,
+              "representative": false,
+              "hmmStart": 3,
+              "hmmEnd": 75,
+              "hmmLength": 81,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 2.2e-26,
+              "score": 102.9,
+              "envelopeStart": 3,
+              "envelopeEnd": 82,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 5,
+                  "end": 78,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.2e-26,
+          "score": 102.9,
+          "model-ac": "PF03979"
+        },
+        {
+          "signature": {
+            "accession": "PF04546",
+            "name": "Sigma70_ner",
+            "description": "Sigma-70, non-essential region",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007631",
+              "name": "RNA_pol_sigma_70_non-ess",
+              "description": "RNA polymerase sigma factor 70, non-essential domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 137,
+              "end": 348,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 210,
+              "hmmLength": 210,
+              "hmmBounds": "COMPLETE",
+              "evalue": 2.3e-72,
+              "score": 254.9,
+              "envelopeStart": 137,
+              "envelopeEnd": 348,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 137,
+                  "end": 348,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 2.3e-72,
+          "score": 254.9,
+          "model-ac": "PF04546"
+        },
+        {
+          "signature": {
+            "accession": "PF04542",
+            "name": "Sigma70_r2",
+            "description": "Sigma-70 region 2",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007627",
+              "name": "RNA_pol_sigma70_r2",
+              "description": "RNA polymerase sigma-70 region 2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 379,
+              "end": 449,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 71,
+              "hmmLength": 71,
+              "hmmBounds": "COMPLETE",
+              "evalue": 3.4e-20,
+              "score": 82.9,
+              "envelopeStart": 379,
+              "envelopeEnd": 449,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 379,
+                  "end": 449,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.2e-20,
+          "score": 84.4,
+          "model-ac": "PF04542"
+        },
+        {
+          "signature": {
+            "accession": "PF00140",
+            "name": "Sigma70_r1_2",
+            "description": "Sigma-70 factor, region 1.2",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR009042",
+              "name": "RNA_pol_sigma70_r1_2",
+              "description": "RNA polymerase sigma-70 region 1.2",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 96,
+              "end": 126,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 31,
+              "hmmLength": 34,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 1.2e-08,
+              "score": 46.0,
+              "envelopeStart": 96,
+              "envelopeEnd": 129,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 96,
+                  "end": 126,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 1.3e-09,
+          "score": 49.2,
+          "model-ac": "PF00140"
+        },
+        {
+          "signature": {
+            "accession": "PF04545",
+            "name": "Sigma70_r4",
+            "description": "Sigma-70, region 4",
+            "type": "DOMAIN",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007630",
+              "name": "RNA_pol_sigma70_r4",
+              "description": "RNA polymerase sigma-70 region 4",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 547,
+              "end": 600,
+              "representative": true,
+              "hmmStart": 1,
+              "hmmEnd": 50,
+              "hmmLength": 50,
+              "hmmBounds": "COMPLETE",
+              "evalue": 4.7e-15,
+              "score": 66.1,
+              "envelopeStart": 547,
+              "envelopeEnd": 600,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 547,
+                  "end": 600,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 4.7e-15,
+          "score": 66.1,
+          "model-ac": "PF04545"
+        },
+        {
+          "signature": {
+            "accession": "TIGR02937",
+            "name": "sigma70-ECF",
+            "description": "sigma-70 family RNA polymerase sigma factor",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": {
+              "accession": "IPR014284",
+              "name": "RNA_pol_sigma-70_dom",
+              "description": "RNA polymerase sigma-70-like domain",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 375,
+              "end": 600,
+              "representative": false,
+              "hmmStart": 2,
+              "hmmEnd": 163,
+              "hmmLength": 165,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 3.6e-34,
+              "score": 129.2,
+              "envelopeStart": 374,
+              "envelopeEnd": 601,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 375,
+                  "end": 600,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 3.6e-34,
+          "score": 129.2,
+          "model-ac": "TIGR02937"
+        },
+        {
+          "signature": {
+            "accession": "PF04539",
+            "name": "Sigma70_r3",
+            "description": "Sigma-70 region 3",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "PFAM",
+              "version": "38.2"
+            },
+            "entry": {
+              "accession": "IPR007624",
+              "name": "RNA_pol_sigma70_r3",
+              "description": "RNA polymerase sigma-70 region 3",
+              "type": "DOMAIN",
+              "goXRefs": [],
+              "pathwayXRefs": []
+            }
+          },
+          "locations": [
+            {
+              "start": 458,
+              "end": 533,
+              "representative": false,
+              "hmmStart": 1,
+              "hmmEnd": 76,
+              "hmmLength": 78,
+              "hmmBounds": "N_TERMINAL_COMPLETE",
+              "evalue": 8e-26,
+              "score": 101.3,
+              "envelopeStart": 458,
+              "envelopeEnd": 535,
+              "postProcessed": true,
+              "location-fragments": [
+                {
+                  "start": 458,
+                  "end": 533,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 8e-26,
+          "score": 101.3,
+          "model-ac": "PF04539"
+        },
+        {
+          "signature": {
+            "accession": "NF004208",
+            "name": "PRK05658.1",
+            "description": "RNA polymerase sigma factor RpoD",
+            "type": "FAMILY",
+            "signatureLibraryRelease": {
+              "library": "NCBIFAM",
+              "version": "19.0"
+            },
+            "entry": null
+          },
+          "locations": [
+            {
+              "start": 2,
+              "end": 612,
+              "representative": true,
+              "hmmStart": 20,
+              "hmmEnd": 630,
+              "hmmLength": 631,
+              "hmmBounds": "INCOMPLETE",
+              "evalue": 0.0,
+              "score": 937.0,
+              "envelopeStart": 1,
+              "envelopeEnd": 613,
+              "postProcessed": false,
+              "location-fragments": [
+                {
+                  "start": 2,
+                  "end": 612,
+                  "dc-status": "CONTINUOUS"
+                }
+              ]
+            }
+          ],
+          "evalue": 0.0,
+          "score": 937.2,
+          "model-ac": "NF004208"
+        }
+      ],
+      "xref": [
+        {
+          "name": "NP_417539.1",
+          "id": "NP_417539.1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+# ── Raw image data (large binaries, supplied separately) ───────
+*.DNG
+*.dng
+# other raw/large image formats, in case future assays add them
+*.CR2
+*.NEF
+*.ARW
+*.HEIC
+*.heic
+*.tif
+*.tiff
+
+# ── Generated outputs (regenerable from scripts) ───────────────
+outputs/
+
+# ── Throwaway / exploratory work ───────────────────────────────
+tmp/
+scratchpad/
+manuscript_drafts/
+HS3_Manuscript*.zip
+
+# ── Machine-specific / agent config ────────────────────────────
+CLAUDE.md
+TODO.md
+.claude/
+bash.sc
+
+# Runtime inputs are local; export only the frozen manuscript inputs.
+data/*
+!data/manuscript/
+!data/rpoS_locus/
+!data/SURV/
+
+# ── Editor / process temp files ────────────────────────────────
+*.tmp
+*.tmp.*
+# Excel lock files, created when a tracked workbook is opened
+~$*
+
+# ── Python ─────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ── Editors / OS cruft ─────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

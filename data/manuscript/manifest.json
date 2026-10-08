@@ -1,0 +1,1623 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-07",
+  "source_date_epoch": 1791331200,
+  "environment": {
+    "python": "3.9.6",
+    "system": "Darwin",
+    "machine": "arm64",
+    "interproscan": "5.78-109.0",
+    "pfam": "38.2",
+    "ncbifam": "19.0",
+    "clustal_omega_service": "EBI Job Dispatcher REST clustalo",
+    "font_preference": [
+      "Arial",
+      "Helvetica Neue",
+      "Helvetica",
+      "DejaVu Sans"
+    ]
+  },
+  "files": [
+    {
+      "path": "data/SURV/survival_data.csv",
+      "destination": "data/SURV/survival_data.csv",
+      "bytes": 6029,
+      "sha256": "2b76e52b4c2fbe2de9bfe613c0bee156b408671969ff1c3c815fb0d4c6a5e25b",
+      "analyses": [
+        "survival"
+      ],
+      "provenance": {
+        "description": "Plate counts and source workbook; see data/SURV/README.md."
+      }
+    },
+    {
+      "path": "data/SURV/survival_data.xlsx",
+      "destination": "data/SURV/survival_data.xlsx",
+      "bytes": 15773,
+      "sha256": "a25ab617260d87c9889606ab35e2e1cd21e5204b95568715618d4edb92d88dde",
+      "analyses": [
+        "survival"
+      ],
+      "provenance": {
+        "description": "Plate counts and source workbook; see data/SURV/README.md."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_1.json",
+      "destination": "outputs/CR/cache/48h_LB_1.json",
+      "bytes": 143343,
+      "sha256": "0d343bd320767dceabae1b9f67eefcf6db9793d7358356f38e0bc518aeb783e6",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_1.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_10.json",
+      "destination": "outputs/CR/cache/48h_LB_10.json",
+      "bytes": 146622,
+      "sha256": "8a23732112364d6ae183422cbba7d17b525aae6e2d43cbaa116121e0c13fdc4a",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_10.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_11.json",
+      "destination": "outputs/CR/cache/48h_LB_11.json",
+      "bytes": 144146,
+      "sha256": "862cca8c0af93230d7a9c2f0d2c14683ca416a7ee77a6fd105dc3314ab4c5941",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_11.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_12.json",
+      "destination": "outputs/CR/cache/48h_LB_12.json",
+      "bytes": 145218,
+      "sha256": "31d9e53cb5d6f1b87688b3720411262f03933751f23ae96e045ad37f000c410d",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_12.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_2.json",
+      "destination": "outputs/CR/cache/48h_LB_2.json",
+      "bytes": 148288,
+      "sha256": "d55ad6fd22ac430f1e86e8c12a6df04ff5abbb5f90575817302d2c606b0aafcd",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_2.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_3.json",
+      "destination": "outputs/CR/cache/48h_LB_3.json",
+      "bytes": 149519,
+      "sha256": "158624ee21e01553c58667879b46886f5237e5b9d359a900cd742e05f7b67364",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_3.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_4.json",
+      "destination": "outputs/CR/cache/48h_LB_4.json",
+      "bytes": 145373,
+      "sha256": "5094cf0fb96db1e433ca9e59b93b16957c607b0535ce273f28b6c27effb2b3af",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_4.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_5.json",
+      "destination": "outputs/CR/cache/48h_LB_5.json",
+      "bytes": 147643,
+      "sha256": "c01342dd5f1fa31da36b8012003ee60352133702d903417cb1da8518d0c69206",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_5.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_6.json",
+      "destination": "outputs/CR/cache/48h_LB_6.json",
+      "bytes": 160221,
+      "sha256": "993b4cc4f60794050fc8e25c837bf842e4f2ae9ab45385c7f63643720acffea6",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_6.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_7.json",
+      "destination": "outputs/CR/cache/48h_LB_7.json",
+      "bytes": 150194,
+      "sha256": "5b6de013f80b02fe25c8a03cc6986a503ae04dfdfb705bef9b97f9df5338e2c4",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_7.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_8.json",
+      "destination": "outputs/CR/cache/48h_LB_8.json",
+      "bytes": 148010,
+      "sha256": "c9cbfabc9f0783eae97eaa32f5a8a1ff4c25fe3675e58127c634f4360d253d9d",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_8.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_LB_9.json",
+      "destination": "outputs/CR/cache/48h_LB_9.json",
+      "bytes": 146378,
+      "sha256": "b815fc0acf9165225a1cc49708855bc6452f330d5066558f539a96a3410d8570",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_LB_9.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_1.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_1.json",
+      "bytes": 160809,
+      "sha256": "c39aae17d6f5d485956eb540da4aabba85f1066869d7b9eadbf647f4f5ba36d5",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_1.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_10.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_10.json",
+      "bytes": 153007,
+      "sha256": "e16e77c98420de99fc0be1ee6728aba0f8cac82aa82a442b0c5c602a46dba45c",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_10.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_11.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_11.json",
+      "bytes": 155818,
+      "sha256": "52e49e75d383ab43c4f8ba0f777de457a8df7fc4cf602064927d34957e8b8981",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_11.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_12.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_12.json",
+      "bytes": 153319,
+      "sha256": "3e0c5fb69e8d9eefb99afe8cb55c861c23a920e2dfad2826c9a8db6712a3bcf5",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_12.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_2.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_2.json",
+      "bytes": 151172,
+      "sha256": "60e12b606f58c0f069c255109bc927ecba5db9c89b2804c9701cc45c6e20e83c",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_2.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_3.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_3.json",
+      "bytes": 151301,
+      "sha256": "755fdc58be963fab4b30439d2237c9aad9a8971d2eebc662c25551fa64d73397",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_3.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_4.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_4.json",
+      "bytes": 159909,
+      "sha256": "0eb08c9544b0cb2dc9c506dd0bc966d1be301825a94ce4013491ce5dfaf76405",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_4.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_5.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_5.json",
+      "bytes": 152489,
+      "sha256": "3596d041884c72e21e8641d54ce14500626d2b9674486e9fc6c4659733250310",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_5.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_6.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_6.json",
+      "bytes": 152884,
+      "sha256": "1d535ed2fe6248ee2acd24a7b6be620d310f7fa1be88db953243322c387985ed",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_6.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_7.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_7.json",
+      "bytes": 159401,
+      "sha256": "6392ff44b32fec580c34ab81ca9625bcbe1d11cb70a8a688ada75588259d94ea",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_7.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_8.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_8.json",
+      "bytes": 159207,
+      "sha256": "f28d36d5bfe5e6f26a7e438d3db7af898762df487a7ad9e4ffeb70e52650b052",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_8.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_NaCl-_9.json",
+      "destination": "outputs/CR/cache/48h_NaCl-_9.json",
+      "bytes": 151720,
+      "sha256": "cbfa1392ed4e99decffb967c0440f0ab915e9811acb82bf7324f6f1fd99fb104",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_NaCl-_9.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_1.json",
+      "destination": "outputs/CR/cache/48h_R2A_1.json",
+      "bytes": 149944,
+      "sha256": "0c446c6f61ecefb7b45f473f237464e0bab847c0099dac433acf3f3d125d52d4",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_1.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_10.json",
+      "destination": "outputs/CR/cache/48h_R2A_10.json",
+      "bytes": 150310,
+      "sha256": "d44c68e19e6c3a0ee6e1f9730ebfdc496c55248a6a9f1308180dc5e5bcee35c0",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_10.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_11.json",
+      "destination": "outputs/CR/cache/48h_R2A_11.json",
+      "bytes": 151660,
+      "sha256": "b3e174523e83d33b163a6a3ef8db9361c3e04abb34323fbde9d8051a33e57098",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_11.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_12.json",
+      "destination": "outputs/CR/cache/48h_R2A_12.json",
+      "bytes": 151899,
+      "sha256": "6f14cb5278e253295bf66eb28ae0b3fb7e7c16a34ee43f8aa3bb734d87f74029",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_12.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_2.json",
+      "destination": "outputs/CR/cache/48h_R2A_2.json",
+      "bytes": 148729,
+      "sha256": "28e238bfe624242061a4cf5ef6f325ca1e327db7e6fa66812140c70b8902e2b6",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_2.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_3.json",
+      "destination": "outputs/CR/cache/48h_R2A_3.json",
+      "bytes": 150887,
+      "sha256": "6850fe56ee42cf0b4ffc3d7fe2df1c2f69a70340bf695662eab97e941d111ede",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_3.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_4.json",
+      "destination": "outputs/CR/cache/48h_R2A_4.json",
+      "bytes": 136048,
+      "sha256": "04042c29696e1bc4877c39308bb1bf7932fff498a1c1f030d6181cc7bd21314d",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_4.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_5.json",
+      "destination": "outputs/CR/cache/48h_R2A_5.json",
+      "bytes": 147685,
+      "sha256": "1eb2b1f107ac8d63023fe58c782a5033b018a7d47307b8ae2c174b45e4e663f0",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_5.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_6.json",
+      "destination": "outputs/CR/cache/48h_R2A_6.json",
+      "bytes": 149518,
+      "sha256": "c2d77dbff8ed4a84ff430f86791cc2aa9e2724133b57890fac7f8e27a6990d7d",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_6.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_7.json",
+      "destination": "outputs/CR/cache/48h_R2A_7.json",
+      "bytes": 149792,
+      "sha256": "60d6f75db5316fd1df60035a68224b9b4230b52683d3ad9d24d5452a71f48b2a",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_7.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_8.json",
+      "destination": "outputs/CR/cache/48h_R2A_8.json",
+      "bytes": 152908,
+      "sha256": "d2edd57ed2f2960bb5d17e2ae0bec16d6e06925989bab401c6552df71d83068b",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_8.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/48h_R2A_9.json",
+      "destination": "outputs/CR/cache/48h_R2A_9.json",
+      "bytes": 152051,
+      "sha256": "5ab024450276e8f91f031152b290951a89ff8806cfc678d87295701ce92c00c6",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/48h_R2A_9.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_1.json",
+      "destination": "outputs/CR/cache/72h_LB_1.json",
+      "bytes": 153253,
+      "sha256": "c0031faa1200aaf8379122593e2dd33946d70fb0da360c5ff7a79bd76310ed80",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_1.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_10.json",
+      "destination": "outputs/CR/cache/72h_LB_10.json",
+      "bytes": 151574,
+      "sha256": "ce3e47ced4c7b2a6d26726f66916da8a2b8e5e0fc1295fbafb447b7be479aecd",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_10.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_11.json",
+      "destination": "outputs/CR/cache/72h_LB_11.json",
+      "bytes": 151120,
+      "sha256": "914251dedef9c5b4c7a3e468f2b6bd4e732cf4a9cc7d39ac37e2cac5d56f6185",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_11.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_12.json",
+      "destination": "outputs/CR/cache/72h_LB_12.json",
+      "bytes": 147601,
+      "sha256": "a9f594c7b57dec853eb2e81d49ee14aff10843be62eec19f90d35b042bb16992",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_12.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_2.json",
+      "destination": "outputs/CR/cache/72h_LB_2.json",
+      "bytes": 149395,
+      "sha256": "d66c7d038caf80696a7112fc2d4a864dca28ca3a207f39945eeaa8b971e921e4",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_2.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_3.json",
+      "destination": "outputs/CR/cache/72h_LB_3.json",
+      "bytes": 146153,
+      "sha256": "05b75a2830fd5af83ec11be8a43bae2f6828e1c983c1776d66ae39fb1ed3ea69",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_3.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_4.json",
+      "destination": "outputs/CR/cache/72h_LB_4.json",
+      "bytes": 148821,
+      "sha256": "620482363acaef055bb4bb9a13a4813f07247d0ec91b5579d37305a67a60a11e",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_4.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_5.json",
+      "destination": "outputs/CR/cache/72h_LB_5.json",
+      "bytes": 149810,
+      "sha256": "9399d74ada5c26b7991495f3228f1d3c6631d3eb892f09c0ca937d7e9450a48d",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_5.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_6.json",
+      "destination": "outputs/CR/cache/72h_LB_6.json",
+      "bytes": 151518,
+      "sha256": "089eb319ae1addeac7333c30715877c66b23c013f4451d324de5d292e11f7b35",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_6.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_7.json",
+      "destination": "outputs/CR/cache/72h_LB_7.json",
+      "bytes": 165711,
+      "sha256": "dd6b76db68bcd54ae4532432a02da859627d30e414d6352554df79f1b215b511",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_7.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_8.json",
+      "destination": "outputs/CR/cache/72h_LB_8.json",
+      "bytes": 147319,
+      "sha256": "6e501a8da87ea8949f1a263368f20adc2b52fb8f6d84062e9444477840eebc41",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_8.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_LB_9.json",
+      "destination": "outputs/CR/cache/72h_LB_9.json",
+      "bytes": 149121,
+      "sha256": "ede3880282ada34393dc7eb0761ef1f9659a9708e2a669d29a4b35438f2a47eb",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_LB_9.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_1.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_1.json",
+      "bytes": 154626,
+      "sha256": "039f6c57dfcf374dbef1f205edaad1128b93580bcc9b03cde08e506d57731563",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_1.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_10.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_10.json",
+      "bytes": 154386,
+      "sha256": "fe6d387be4cdab413a22edd730c03bba7130de0453a584fa83c739b1b5228ee1",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_10.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_11.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_11.json",
+      "bytes": 154950,
+      "sha256": "54acb2bfe9c3cb328bf0bed85569f61462b237598371f03668c1693b67cd82d6",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_11.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_12.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_12.json",
+      "bytes": 151365,
+      "sha256": "c0df4e0df5856fe7765a921a326f20eddc38702cbd0b7b38e4e67a2d3fe79433",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_12.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_2.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_2.json",
+      "bytes": 154883,
+      "sha256": "abac174fb916a6cdc3e90e457199951f515306ae44064391664a1556c96a4b22",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_2.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_3.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_3.json",
+      "bytes": 159332,
+      "sha256": "6cccfbe08bc67015f3e3e1b48952d9159e0b7955c611f3b36ddf3dc2f2e6585d",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_3.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_4.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_4.json",
+      "bytes": 154463,
+      "sha256": "47eda73060ecb825e3f284088a1ce36e51d773fdc23b9d444a3fcfb0c76be34e",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_4.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_5.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_5.json",
+      "bytes": 145665,
+      "sha256": "76c5c5556da8e9ca3cb8511d7b83c0c0d0256a67a9559fdf59c739d1bd87b698",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_5.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_6.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_6.json",
+      "bytes": 159622,
+      "sha256": "b38422de20e45a7e2f0196144254fad249e08fbdcdc60fa8a0d259061d89d514",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_6.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_7.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_7.json",
+      "bytes": 153658,
+      "sha256": "2dbd0faeec800cc0477256f2651a01c81976dcadbfe792735a7b883771b13cae",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_7.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_8.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_8.json",
+      "bytes": 156388,
+      "sha256": "6be140ec9410ad09c811fb48a817bf41a192e90445dd368d22c3e75721629aaa",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_8.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_NaCl-_9.json",
+      "destination": "outputs/CR/cache/72h_NaCl-_9.json",
+      "bytes": 163581,
+      "sha256": "1244bd88e28831b242cfafdc534ed442a60efc1c76f12da72c3d765f652c4461",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_NaCl-_9.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_1.json",
+      "destination": "outputs/CR/cache/72h_R2A_1.json",
+      "bytes": 155232,
+      "sha256": "01b4ca46d780ab958dd3cd577dc67fea72b9a6a57464e4d44a2391066c21c6bf",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_1.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_10.json",
+      "destination": "outputs/CR/cache/72h_R2A_10.json",
+      "bytes": 156646,
+      "sha256": "b738a51d37f490335ef402d658153926e0fb631a40f216645d7c4c58d393c001",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_10.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_11.json",
+      "destination": "outputs/CR/cache/72h_R2A_11.json",
+      "bytes": 155459,
+      "sha256": "4b0d225249c70f7b0839d9c8ac218c97f5a2d87a4767bdbaf6ba799fc7a9050d",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_11.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_12.json",
+      "destination": "outputs/CR/cache/72h_R2A_12.json",
+      "bytes": 154665,
+      "sha256": "107efbfecf1d2c549a1e6c9e4fa6ca28601f127f8b808e935fd3b2322d7fd056",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_12.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_2.json",
+      "destination": "outputs/CR/cache/72h_R2A_2.json",
+      "bytes": 154846,
+      "sha256": "a894356c4576ff0fa770a9d78125867d5abcb1891c5f2beb93edd0740d3a944a",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_2.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_3.json",
+      "destination": "outputs/CR/cache/72h_R2A_3.json",
+      "bytes": 157913,
+      "sha256": "f82fcea43c2ed38bc93641e70eb69003f1a9a2e7bc1b761eb53cd9b110f8de68",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_3.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_4.json",
+      "destination": "outputs/CR/cache/72h_R2A_4.json",
+      "bytes": 157517,
+      "sha256": "bb442d0b54fb6804f543bb6bac09d596b30469eb711e4fabbecfc7cdb4fed64a",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_4.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_5.json",
+      "destination": "outputs/CR/cache/72h_R2A_5.json",
+      "bytes": 155575,
+      "sha256": "ae0fba6c54d129720f8b251770eb9a3e6183a61f2a35a50a880ec6d5a1039ce1",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_5.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_6.json",
+      "destination": "outputs/CR/cache/72h_R2A_6.json",
+      "bytes": 155991,
+      "sha256": "075470bdd54e60e151f897232fedceabf255034a2b4c43cf6eb7fb19f85e214c",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_6.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_7.json",
+      "destination": "outputs/CR/cache/72h_R2A_7.json",
+      "bytes": 155573,
+      "sha256": "8288e964b7d2d4e58ea6d9da968761841759ee3f93f223285ae4b6e3c9587703",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_7.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_8.json",
+      "destination": "outputs/CR/cache/72h_R2A_8.json",
+      "bytes": 154607,
+      "sha256": "cb4bac8ad263587c883daabb8b4fa73fa3e1727208c6e8e22d683da31153dd3c",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_8.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cache/72h_R2A_9.json",
+      "destination": "outputs/CR/cache/72h_R2A_9.json",
+      "bytes": 141311,
+      "sha256": "4448842697cb188e4b76dd4d35b90b33c96198d1b5aad9984a7dff570c83ecc8",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cache/72h_R2A_9.json",
+        "description": "Saved plate geometry, calibration, colony masks, and exclusions."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/cr_summary.csv",
+      "destination": "outputs/CR/cr_summary.csv",
+      "bytes": 17050,
+      "sha256": "7294821a8444c05d87fc3ce4cb36720df7b8f7f262098bf3ccd07f2d795fec1b",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/cr_summary.csv",
+        "description": "Saved colony quantification; includes both readings and all recorded media."
+      }
+    },
+    {
+      "path": "data/manuscript/CR/quantification.csv",
+      "destination": "outputs/CR/quantification.csv",
+      "bytes": 86177,
+      "sha256": "76dd3c4dbbe49daa097d09fa9bfb9bb4bff466e564bf7473d876b60f207b3595",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "working_file": "outputs/CR/quantification.csv",
+        "description": "Saved colony quantification; includes both readings and all recorded media."
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/alignments/sigma70.aln.fasta",
+      "destination": "data/rpos_sequence/rq2/alignments/sigma70.aln.fasta",
+      "bytes": 5606,
+      "sha256": "0fc6e6184c79b5df0bd9d416505fa180c688c9dcebd9e66ec770aa184e56e4d2",
+      "analyses": [
+        "alignments"
+      ],
+      "provenance": {
+        "service": "EBI Clustal Omega",
+        "working_file": "data/rpos_sequence/rq2/alignments/sigma70.aln.fasta"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/alignments/sigma70.clustal",
+      "destination": "data/rpos_sequence/rq2/alignments/sigma70.clustal",
+      "bytes": 9559,
+      "sha256": "4ee528ba2c8c233ade3b5c79c09c9a66b9ecc8e9804d6fd31e2f4f3f438e43f1",
+      "analyses": [
+        "alignments"
+      ],
+      "provenance": {
+        "service": "EBI Clustal Omega",
+        "working_file": "data/rpos_sequence/rq2/alignments/sigma70.clustal"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/hs3/genomic.fna",
+      "destination": "data/rpos_sequence/assemblies/hs3/genomic.fna",
+      "bytes": 3441280,
+      "sha256": "98403654cbe9f38b94a79b2d5449640bd3fe3fee3f426c181c485b357d34929d",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_015140455.1",
+        "working_file": "data/rpos_sequence/assemblies/hs3/genomic.fna"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/hs3/genomic.gff",
+      "destination": "data/rpos_sequence/assemblies/hs3/genomic.gff",
+      "bytes": 2094221,
+      "sha256": "e559c702cb86a578fed20e1462f932480a84ae0bcb01e35a6e316f7b136a1642",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_015140455.1",
+        "working_file": "data/rpos_sequence/assemblies/hs3/genomic.gff"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/hs3/protein.faa",
+      "destination": "data/rpos_sequence/assemblies/hs3/protein.faa",
+      "bytes": 1248391,
+      "sha256": "3e728969d2fb024f00737c320d0a6bf9cc2c0473698039dea87d0e403707a8cf",
+      "analyses": [
+        "rpos",
+        "alt-factors",
+        "alignments"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_015140455.1",
+        "working_file": "data/rpos_sequence/assemblies/hs3/protein.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/k12/genomic.fna",
+      "destination": "data/rpos_sequence/assemblies/k12/genomic.fna",
+      "bytes": 4699745,
+      "sha256": "53bb6a51b6e92139ced1e38f74b7938781027c52200922ff03718c2237d23bb4",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_000005845.2",
+        "working_file": "data/rpos_sequence/assemblies/k12/genomic.fna"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/k12/genomic.gff",
+      "destination": "data/rpos_sequence/assemblies/k12/genomic.gff",
+      "bytes": 2467646,
+      "sha256": "af8609c2ff73e4e23f2007b4938470d350fe8ee75dba832f908992855767fac8",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_000005845.2",
+        "working_file": "data/rpos_sequence/assemblies/k12/genomic.gff"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/k12/protein.faa",
+      "destination": "data/rpos_sequence/assemblies/k12/protein.faa",
+      "bytes": 1750878,
+      "sha256": "9b8d21ea8ea5180bd9a96d7895dba9b5789002f43c6f421f2a7cdd1b141aa129",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_000005845.2",
+        "working_file": "data/rpos_sequence/assemblies/k12/protein.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/pa14/genomic.fna",
+      "destination": "data/rpos_sequence/assemblies/pa14/genomic.fna",
+      "bytes": 6619435,
+      "sha256": "035464d72feb51de37217d5989695768f4a7571207bdd023ea7732edffa353e4",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_000014625.1",
+        "working_file": "data/rpos_sequence/assemblies/pa14/genomic.fna"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/pa14/genomic.gff",
+      "destination": "data/rpos_sequence/assemblies/pa14/genomic.gff",
+      "bytes": 3647681,
+      "sha256": "2adae206f0c5d426ef3068db6d329344bfbe5f98e48f6dd6264ac4565d1790b6",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_000014625.1",
+        "working_file": "data/rpos_sequence/assemblies/pa14/genomic.gff"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/pa14/protein.faa",
+      "destination": "data/rpos_sequence/assemblies/pa14/protein.faa",
+      "bytes": 2424475,
+      "sha256": "638f338b39d997bb068e675ec2696feef85537da0cdcf6268e4000f2d54a6e35",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_000014625.1",
+        "working_file": "data/rpos_sequence/assemblies/pa14/protein.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/vch/genomic.fna",
+      "destination": "data/rpos_sequence/assemblies/vch/genomic.fna",
+      "bytes": 4190374,
+      "sha256": "15a2ae468e01f8641fdb7ad5eff4bad591b2c04dc60af486088447c68642caf9",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_008369605.1",
+        "working_file": "data/rpos_sequence/assemblies/vch/genomic.fna"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/vch/genomic.gff",
+      "destination": "data/rpos_sequence/assemblies/vch/genomic.gff",
+      "bytes": 2558807,
+      "sha256": "ca5a87f4f700e1aabe98e9e42481843963203dfb9974e184df9c95f9623da1a2",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_008369605.1",
+        "working_file": "data/rpos_sequence/assemblies/vch/genomic.gff"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/assemblies/vch/protein.faa",
+      "destination": "data/rpos_sequence/assemblies/vch/protein.faa",
+      "bytes": 1454361,
+      "sha256": "38342c9e6569ca48b9b20979871151a2220fc444586976dae6efd80a573f7c0c",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "assembly": "GCF_008369605.1",
+        "working_file": "data/rpos_sequence/assemblies/vch/protein.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/hs3_queries/hs3_WP_200915120.1.faa",
+      "destination": "data/rpos_sequence/rq2/queries/hs3_WP_200915120.1.faa",
+      "bytes": 737,
+      "sha256": "bb84288dd53f570be3568293205f6d27b088e80fa3cd3367149e230d1d0edd35",
+      "analyses": [
+        "rpos",
+        "alignments"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "accession": "WP_200915120.1",
+        "working_file": "data/rpos_sequence/rq2/queries/hs3_WP_200915120.1.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/hs3_queries/hs3_WP_255517369.1.faa",
+      "destination": "data/rpos_sequence/rq2/queries/hs3_WP_255517369.1.faa",
+      "bytes": 396,
+      "sha256": "5600051cbf231382b2d55a6eacd8a38f35ed341e61d974f5ce3df00306320615",
+      "analyses": [
+        "rpos",
+        "alignments"
+      ],
+      "provenance": {
+        "database": "NCBI RefSeq",
+        "accession": "WP_255517369.1",
+        "working_file": "data/rpos_sequence/rq2/queries/hs3_WP_255517369.1.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/interpro/rpos_refs__iprscan.json",
+      "destination": "data/rpos_sequence/rq2/raw_hmmer/rpos_refs__iprscan.json",
+      "bytes": 90970,
+      "sha256": "0fdb44dc21f3303564a5e23959639435fa584940ef5024d430e87102b640faf8",
+      "analyses": [
+        "rpos",
+        "alignments"
+      ],
+      "provenance": {
+        "service": "EBI InterProScan",
+        "selection": "RpoS/RpoD panel proteins only; retained response records are unchanged.",
+        "record_sources": {
+          "WP_255517369.1": {
+            "working_file": "data/rpos_sequence/raw_hmmer/hs3__iprscan.json",
+            "sha256": "71230735d818f13c22050b43362adff965b64726c8d5091e09d7e5bafe9bad3c"
+          },
+          "WP_200915120.1": {
+            "working_file": "data/rpos_sequence/raw_hmmer/hs3__iprscan.json",
+            "sha256": "71230735d818f13c22050b43362adff965b64726c8d5091e09d7e5bafe9bad3c"
+          },
+          "WP_003085035.1": {
+            "working_file": "data/rpos_sequence/raw_hmmer/pa14__iprscan.json",
+            "sha256": "72a4d3ec69d2d6002f4ea410b22ab6151c88b70242ed47984182407004533b0e"
+          },
+          "WP_003113871.1": {
+            "working_file": "data/rpos_sequence/raw_hmmer/pa14__iprscan.json",
+            "sha256": "72a4d3ec69d2d6002f4ea410b22ab6151c88b70242ed47984182407004533b0e"
+          },
+          "O51804": {
+            "working_file": "data/rpos_sequence/rq2/raw_hmmer/rq2_refs__iprscan.json",
+            "sha256": "9436de63c8b1cb5047828c6c5d6fe0d8302d47aab4b10b590a3253ea00ead4a2"
+          },
+          "Q9KUK1": {
+            "working_file": "data/rpos_sequence/rq2/raw_hmmer/rq2_refs__iprscan.json",
+            "sha256": "9436de63c8b1cb5047828c6c5d6fe0d8302d47aab4b10b590a3253ea00ead4a2"
+          },
+          "P13445": {
+            "working_file": "data/rpos_sequence/rq2/raw_hmmer/rq2_refs__iprscan.json",
+            "sha256": "9436de63c8b1cb5047828c6c5d6fe0d8302d47aab4b10b590a3253ea00ead4a2"
+          },
+          "P00579": {
+            "working_file": "data/rpos_sequence/rq2/raw_hmmer/rq2_refs__iprscan.json",
+            "sha256": "9436de63c8b1cb5047828c6c5d6fe0d8302d47aab4b10b590a3253ea00ead4a2"
+          }
+        }
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/interpro/sigma_factors__iprscan.json",
+      "destination": "data/rpos_sequence/raw_hmmer/sigma_factors__iprscan.json",
+      "bytes": 143883,
+      "sha256": "e085e97b8a86d681b6c68904002bcc55435907aa0d5d74b720cebe018e1d9ef1",
+      "analyses": [
+        "alt-factors"
+      ],
+      "provenance": {
+        "service": "EBI InterProScan",
+        "working_file": "data/rpos_sequence/raw_hmmer/sigma_factors__iprscan.json",
+        "source_sha256": "54b4900f295deee14cf4bbdeac170b0e7981d3cb4fc06adfb9d7e17b1c5fb099",
+        "selection": "Four alternative sigma factors in the four manuscript genomes; retained response records are unchanged."
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/queries/ncbi_WP_003085035.1.faa",
+      "destination": "data/rpos_sequence/queries/ncbi_WP_003085035.1.faa",
+      "bytes": 704,
+      "sha256": "785f7cb90f01d88466204675e405a61a16526bc64de68ddf6856acf43d35fdbc",
+      "analyses": [
+        "rpos",
+        "alignments"
+      ],
+      "provenance": {
+        "database": "ncbi",
+        "accession": "WP_003085035.1",
+        "working_file": "data/rpos_sequence/queries/ncbi_WP_003085035.1.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/queries/ncbi_WP_003113871.1.faa",
+      "destination": "data/rpos_sequence/queries/ncbi_WP_003113871.1.faa",
+      "bytes": 417,
+      "sha256": "7b81fd714d6c621e8b6a3359ebf66e40d14859fd8c03e52cb18392853c2a1dbb",
+      "analyses": [
+        "rpos",
+        "alignments"
+      ],
+      "provenance": {
+        "database": "ncbi",
+        "accession": "WP_003113871.1",
+        "working_file": "data/rpos_sequence/queries/ncbi_WP_003113871.1.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/queries/uniprot_O51804.faa",
+      "destination": "data/rpos_sequence/queries/uniprot_O51804.faa",
+      "bytes": 497,
+      "sha256": "22f4ec36659e9eeb7bdbd5a20e2e9facdf8dc3fd83bcb44191e426860e94ab00",
+      "analyses": [
+        "rpos",
+        "alignments"
+      ],
+      "provenance": {
+        "database": "uniprot",
+        "accession": "O51804",
+        "working_file": "data/rpos_sequence/queries/uniprot_O51804.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/queries/uniprot_P00579.faa",
+      "destination": "data/rpos_sequence/queries/uniprot_P00579.faa",
+      "bytes": 739,
+      "sha256": "2b9caa0515e3da45976dbebd39729a9c35fa892ff78365f23c2dcf7aa26c14a0",
+      "analyses": [
+        "rpos",
+        "alignments"
+      ],
+      "provenance": {
+        "database": "uniprot",
+        "accession": "P00579",
+        "working_file": "data/rpos_sequence/queries/uniprot_P00579.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/queries/uniprot_P13445.faa",
+      "destination": "data/rpos_sequence/queries/uniprot_P13445.faa",
+      "bytes": 451,
+      "sha256": "9c63bc0a395b1c3338067d85ae350ec163a4aeef0a970596b7da033e71e3f731",
+      "analyses": [
+        "rpos",
+        "alignments"
+      ],
+      "provenance": {
+        "database": "uniprot",
+        "accession": "P13445",
+        "working_file": "data/rpos_sequence/queries/uniprot_P13445.faa"
+      }
+    },
+    {
+      "path": "data/manuscript/sequence/queries/uniprot_Q9KUK1.faa",
+      "destination": "data/rpos_sequence/queries/uniprot_Q9KUK1.faa",
+      "bytes": 794,
+      "sha256": "84fe179f7f9393b614663cd384836e5f961a612f6809053d2851e33cadc5a593",
+      "analyses": [
+        "rpos",
+        "alignments"
+      ],
+      "provenance": {
+        "database": "uniprot",
+        "accession": "Q9KUK1",
+        "working_file": "data/rpos_sequence/queries/uniprot_Q9KUK1.faa"
+      }
+    },
+    {
+      "path": "data/rpoS_locus/mutant_rpoS.fna.gz",
+      "destination": "data/rpoS_locus/mutant_rpoS.fna.gz",
+      "bytes": 1040572,
+      "sha256": "72c20e3ee6a1dfc26aa8f0b5259f17857d6e8fd8672eabf1ddd237faf0400673",
+      "analyses": [
+        "rpos"
+      ],
+      "provenance": {
+        "description": "Laboratory sequencing input; see data/rpoS_locus/README.md."
+      }
+    },
+    {
+      "path": "data/rpoS_locus/mutant_rpoS_annotation.tsv",
+      "destination": "data/rpoS_locus/mutant_rpoS_annotation.tsv",
+      "bytes": 781028,
+      "sha256": "a1be03da395b80ec5023215afd64949549fc987ba0ae05765ad230e50987947c",
+      "analyses": [
+        "rpos"
+      ],
+      "provenance": {
+        "description": "Laboratory sequencing input; see data/rpoS_locus/README.md."
+      }
+    },
+    {
+      "path": "data/rpoS_locus/pRE118.gbk",
+      "destination": "data/rpoS_locus/pRE118.gbk",
+      "bytes": 11128,
+      "sha256": "129f12c29da4d57a80055eb3f8aa86d096770a3e3beda138992df3b99f6f0996",
+      "analyses": [
+        "rpos"
+      ],
+      "provenance": {
+        "description": "Laboratory sequencing input; see data/rpoS_locus/README.md."
+      }
+    },
+    {
+      "path": "requirements-reproduce.txt",
+      "destination": null,
+      "bytes": 644,
+      "sha256": "4f556d311923aee822da3582c1815a92bb151930dda42231e9d261775f4b5ea0",
+      "analyses": [
+        "rpos",
+        "alignments",
+        "alt-factors",
+        "survival",
+        "cr"
+      ],
+      "provenance": {
+        "description": "Configuration or environment associated with this snapshot."
+      }
+    },
+    {
+      "path": "src/assays/cr/config.py",
+      "destination": null,
+      "bytes": 10592,
+      "sha256": "101b2b53744a5811a2f5a72e2cd7c05b73a3179627fe9b10fec59b03be1a8a23",
+      "analyses": [
+        "cr"
+      ],
+      "provenance": {
+        "description": "Configuration or environment associated with this snapshot."
+      }
+    },
+    {
+      "path": "src/assays/surv/config.py",
+      "destination": null,
+      "bytes": 4069,
+      "sha256": "d80786daa8f3908dce1cd775cddcbf5eb74b2d6d922e81522e1e8195cbe42b5d",
+      "analyses": [
+        "survival"
+      ],
+      "provenance": {
+        "description": "Configuration or environment associated with this snapshot."
+      }
+    },
+    {
+      "path": "src/seq/rpos_alignments/config.yaml",
+      "destination": null,
+      "bytes": 1948,
+      "sha256": "078da9df58be3513e6280ca64ac9adf3ae7df98242283ac20c12c0d98eabdb89",
+      "analyses": [
+        "rpos",
+        "alignments",
+        "alt-factors"
+      ],
+      "provenance": {
+        "description": "Configuration or environment associated with this snapshot."
+      }
+    },
+    {
+      "path": "src/seq/rpoS_locus/config.yaml",
+      "destination": null,
+      "bytes": 11183,
+      "sha256": "abef6658fecd35d034593f016d79486cbdc5b69a6d25c6f5d52160d949609ce4",
+      "analyses": [
+        "rpos",
+        "alt-factors"
+      ],
+      "provenance": {
+        "description": "Configuration or environment associated with this snapshot."
+      }
+    }
+  ],
+  "raw_images": [
+    {
+      "name": "72h_LB_1.DNG",
+      "bytes": 50247383,
+      "sha256": "e1d2c00287f3c9be4960d586b1a4b4ec7276ba79087e21c1299d0a74608cb607"
+    },
+    {
+      "name": "72h_LB_10.DNG",
+      "bytes": 50320455,
+      "sha256": "771de604ed46af900d4b1aca552c60a378b87cf7ec312e5e859d11822817598a"
+    },
+    {
+      "name": "72h_LB_11.DNG",
+      "bytes": 50203945,
+      "sha256": "8b129830bf7ceb500a8c8f7ccaa5b7efed04415f0c362f7228471414f1a58ea4"
+    },
+    {
+      "name": "72h_LB_12.DNG",
+      "bytes": 50000125,
+      "sha256": "45ba478a93ae0bf6321148779ac9f70d19afa28fe20417e4b610128d0ca644b1"
+    },
+    {
+      "name": "72h_LB_2.DNG",
+      "bytes": 50200999,
+      "sha256": "310e4152f41c987dffdf0447fc67f0bcd6d9b968733f3e27f1294511481b5e5c"
+    },
+    {
+      "name": "72h_LB_3.DNG",
+      "bytes": 49775107,
+      "sha256": "ce1cbf63ad10e8e1547091717b2f8f78c2c504de76e94bd0536b42de7564be60"
+    },
+    {
+      "name": "72h_LB_4.DNG",
+      "bytes": 50433346,
+      "sha256": "aeebede9ea76d75e86f069a83f78729080b0c48fc8ba55125bed80df8ec7e092"
+    },
+    {
+      "name": "72h_LB_5.DNG",
+      "bytes": 50383756,
+      "sha256": "26c2c532d8bf9d544a56526989fe5ae03d3cb786553c075744cdf7d30fa96c59"
+    },
+    {
+      "name": "72h_LB_6.DNG",
+      "bytes": 50430687,
+      "sha256": "ae116b583c0ebd56aa95760d988955e79d2e6c1c25c49fa692a40159043c9963"
+    },
+    {
+      "name": "72h_LB_7.DNG",
+      "bytes": 50506153,
+      "sha256": "c0b28a3c7624dcee989101746253d90ee28fe10898de289d6db8e978a7a68935"
+    },
+    {
+      "name": "72h_LB_8.DNG",
+      "bytes": 50236897,
+      "sha256": "638843b09119c709327454a03bdecd7a46c7b6e5ee9dcaee9b6a22d86ced602c"
+    },
+    {
+      "name": "72h_LB_9.DNG",
+      "bytes": 50360767,
+      "sha256": "2461fd7bf4edad53d980366f99364434535de3aa0cf67cfee870d6b9edd79163"
+    },
+    {
+      "name": "72h_R2A_1.DNG",
+      "bytes": 49671150,
+      "sha256": "f084651c9284c5c495803244765a6fccf3ed418d87ab49feb7f8ec46ba690359"
+    },
+    {
+      "name": "72h_R2A_10.DNG",
+      "bytes": 49511905,
+      "sha256": "4414794d56eace26682e595adc5a8e758175707370edd9908701223df5cb3966"
+    },
+    {
+      "name": "72h_R2A_11.DNG",
+      "bytes": 49731878,
+      "sha256": "64324dc43a827865537afac65db116b54eb8798a0eb032476752d0fc15b7a611"
+    },
+    {
+      "name": "72h_R2A_12.DNG",
+      "bytes": 49730776,
+      "sha256": "826e2d05a99bd721f67bb50a4faf304180eefb89ad1ad065c8ea0f159bc5154c"
+    },
+    {
+      "name": "72h_R2A_2.DNG",
+      "bytes": 49757399,
+      "sha256": "6c7dd6f85e56a4e2055d8c44518383a0b955188cc1186188dc03c80c6ff4f831"
+    },
+    {
+      "name": "72h_R2A_3.DNG",
+      "bytes": 49710851,
+      "sha256": "c251e7cd8ae865d7ee8a93d839ae3339481fe136c3d8e749c9c083c6c652f0b7"
+    },
+    {
+      "name": "72h_R2A_4.DNG",
+      "bytes": 49716374,
+      "sha256": "c21a9d666273819ed1213770c5535e6b0c7193cfc40b08ebed22a73f3b44c0b4"
+    },
+    {
+      "name": "72h_R2A_5.DNG",
+      "bytes": 50067984,
+      "sha256": "960b2d428da0422fb219ee1ee56987daa51e10205096dc2dbb27fa1529ab8647"
+    },
+    {
+      "name": "72h_R2A_6.DNG",
+      "bytes": 49918405,
+      "sha256": "877d654af19a6ac8e0713bd511db03999b84a003ff65908eaa2ecf2c41b64a2e"
+    },
+    {
+      "name": "72h_R2A_7.DNG",
+      "bytes": 47142795,
+      "sha256": "a001311de7e8732fde07af272a7c0821de4fa3658c45bde8f9e616ad3fb7a940"
+    },
+    {
+      "name": "72h_R2A_8.DNG",
+      "bytes": 50176620,
+      "sha256": "45655e671c2992a037391a9f11c3eeea1c2fd9666ae306f8a6344bea9a109974"
+    },
+    {
+      "name": "72h_R2A_9.DNG",
+      "bytes": 47806154,
+      "sha256": "dbf823acedba234684d10f0b97398845dd58aa193280998d9b39fc532be02fbc"
+    }
+  ]
+}
