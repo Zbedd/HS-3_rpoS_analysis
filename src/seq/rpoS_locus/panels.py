@@ -3,9 +3,8 @@
 No function here creates a figure, writes a file, or sets an rcParam —
 `viz` owns all of that, and the caller owns the page.
 
-Gene arrows are drawn in base pairs and every panel is to scale, including
-the 6 kb vector in panel D: an insertion that big is the point of the panel,
-so it is not compressed behind an axis break.
+Linear gene tracks are drawn in base pairs, with omitted sequence marked by
+an axis break. Circular maps show feature positions around the replicon.
 """
 from __future__ import annotations
 
@@ -119,6 +118,13 @@ def gene_symbol(protein_name: str) -> str:
 def _prime(symbol: str) -> str:
     """A gene symbol carrying the prime that marks a partial copy."""
     return fs.italic(symbol) + "′"
+
+
+def _vector_label(label: str) -> str:
+    """Format gene symbols while preserving annotation keys for colours."""
+    if label in ("KanR", "kanR", "sacB"):
+        return fs.italic("kanR" if label == "KanR" else label)
+    return label
 
 
 def construct_name(vector_name: str) -> str:
@@ -357,26 +363,46 @@ def draw_synteny(ax, tracks: list, *, flanks: tuple, anchor: str = "rpoS",
 
 _TIER_Y = {"construct": 2.30, "wt": 1.15, "mutant": 0.0}
 
+
+def _defective_rpos(ax, seg, y, height, *, terminus):
+    """A broken terminal edge marks a partial copy without changing its span."""
+    span = seg.end - seg.start
+    notch = min(80, span * 0.16)
+    half = height / 2
+    if terminus == "C":
+        points = [(0, -half), (span, -half), (span - notch, -half / 2),
+                  (span, 0), (span - notch, half / 2), (span, half), (0, half)]
+    else:
+        head = min(240, span * 0.35)
+        points = [(0, -half), (span - head, -half), (span, 0),
+                  (span - head, half), (0, half), (notch, half / 2),
+                  (0, 0), (notch, -half / 2)]
+    vertices = [(seg.start + x if seg.strand > 0 else seg.end - x, y + dy)
+                for x, dy in points]
+    ax.add_patch(patches.Polygon(vertices, closed=True,
+                                 facecolor=cassette_fill("rpoS"),
+                                 edgecolor=fs.INK, hatch="///",
+                                 linewidth=0.5, zorder=2))
+
+
 def draw_integration(ax, layout: dict, *, palette: dict = None,
                      vector_name: str = "pRE118") -> None:
     """Design over outcome: the construct, the target, and what resulted.
 
-    All three tiers share one base-pair scale, so the 6 kb the vector adds is
-    read off the page rather than taken on trust.
+    The circular construct sits above two chromosome tracks. Those tracks
+    share a base-pair scale outside the marked break in the integrant.
     """
     _bare(ax)
     height = 0.34
     arm_lo, arm_hi = layout["arm"]
     palette = palette or {}
 
-    # The construct tier is not collapsed, so it is the widest thing on the
-    # page and sets the right edge.
-    lo = min(s.start for tier in ("construct", "wt", "mutant")
+    lo = min(s.start for tier in ("wt", "mutant")
              for s in layout[tier])
-    hi = max(s.end for tier in ("construct", "mutant") for s in layout[tier])
+    hi = max(s.end for tier in ("wt", "mutant") for s in layout[tier])
     pad = 0.03 * (hi - lo)
     ax.set_xlim(lo - pad, hi + pad)
-    ax.set_ylim(-0.92, 3.16)
+    ax.set_ylim(-0.92, 4.20)
 
     def draw_tier(name, segments, above=False, gap=None):
         y = _TIER_Y[name]
@@ -399,13 +425,13 @@ def draw_integration(ax, layout: dict, *, palette: dict = None,
                 _block(ax, seg.start, seg.end, y, height,
                        cassette_fill("rpoS"), edgecolor=fs.INK)
             elif seg.kind == "marker":
-                _block(ax, seg.start, seg.end, y, height,
-                       palette.get(seg.label, VECTOR_FILL), edgecolor=fs.INK)
+                _arrow(ax, seg.start, seg.end, seg.strand, y, height,
+                       palette.get(seg.label, VECTOR_FILL), edgecolor=fs.INK,
+                       min_head=240)
             elif seg.kind == "truncated":
-                # A square end, not an arrow head: the head would assert a
-                # stop codon this copy does not have.
-                _block(ax, seg.start, seg.end, y, height,
-                       cassette_fill("rpoS"), edgecolor=fs.INK)
+                _defective_rpos(ax, seg, y, height, terminus="C")
+            elif name == "mutant" and seg.kind == "gene" and seg.label == "rpoS":
+                _defective_rpos(ax, seg, y, height, terminus="N")
             else:
                 _arrow(ax, seg.start, seg.end, seg.strand, y, height,
                        cassette_fill(seg.label)
@@ -417,7 +443,7 @@ def draw_integration(ax, layout: dict, *, palette: dict = None,
                 # so panels D and E name the same block the same way.
                 text = (_prime(seg.label.rstrip("′'"))
                         if seg.kind in ("truncated", "arm")
-                        else seg.label if seg.kind == "marker"
+                        else _vector_label(seg.label) if seg.kind == "marker"
                         else fs.italic(seg.label))
                 ax.text((seg.start + seg.end) / 2,
                         y + sign * (height / 2 + 0.10), text,
@@ -425,45 +451,54 @@ def draw_integration(ax, layout: dict, *, palette: dict = None,
                         color=fs.INK if seg.label in CASSETTE_ORDER
                         or seg.kind == "marker" else fs.INK_MUTED)
 
-    draw_tier("construct", layout["construct"], above=True)
+    size, features = layout["circular_construct"]
+    shown = [f for f in features
+             if f.label in ("rpoS'", "KanR", "sacB")]
+    arm_feature = next(f for f in shown if f.label == "rpoS'")
+    rotation = -math.pi / 2 - 2 * math.pi * (arm_feature.start + arm_feature.end) / (2 * size)
+    centre = ((arm_lo + arm_hi) / 2 - (lo - pad)) / (hi - lo + 2 * pad)
+    plasmid_ax = ax.inset_axes([centre - 0.19, 0.56, 0.38, 0.43])
+    draw_plasmid(plasmid_ax, size, shown, name=vector_name,
+                 palette={**palette, "rpoS'": cassette_fill("rpoS")},
+                 rotation=rotation, clockwise=False,
+                 arm_inside=True, directional=True)
     draw_tier("wt", layout["wt"])
     draw_tier("mutant", layout["mutant"], gap=layout.get("break"))
 
     if layout.get("break"):
         _break_mark(ax, *layout["break"], _TIER_Y["mutant"], height)
 
-    # The homology itself, bracketed on the target: it opens 15 bp ahead of the
-    # start codon and closes inside the CDS, which is where the primers put it,
-    # so the crossover legs land on that span and not on the whole gene.
+    # Follow the crossed loop from the left chromosome into the vector after
+    # the arm, through kanR then sacB, and back to the right chromosome.
     y_arm = _TIER_Y["wt"] + height / 2 + 0.11
     ax.plot([arm_lo, arm_hi], [y_arm, y_arm], color=fs.INK, lw=1.0,
             solid_capstyle="butt", zorder=4)
     for x in (arm_lo, arm_hi):
         ax.plot([x, x], [y_arm, y_arm - 0.07], color=fs.INK, lw=1.0, zorder=4)
-    y0 = _TIER_Y["construct"] - height / 2
-    for a, b in ((arm_lo, arm_hi), (arm_hi, arm_lo)):
-        ax.plot([a, b], [y0, y_arm], color=fs.INK, lw=0.9, zorder=4,
-                solid_capstyle="round")
+    for bp, target in ((arm_feature.end, arm_lo), (arm_feature.start, arm_hi)):
+        angle = rotation + 2 * math.pi * bp / size
+        ax.add_artist(patches.ConnectionPatch(
+            xyA=(0.90 * math.cos(angle), 0.90 * math.sin(angle)),
+            xyB=(target, y_arm), coordsA="data", coordsB="data",
+            axesA=plasmid_ax, axesB=ax, color=fs.INK, lw=0.9, zorder=4))
 
     for name, text in (
-            ("construct", f"{vector_name}::{_prime('rpoS')}"),
             ("wt", "HS-3 chromosome"),
             ("mutant", f"HS-3 {fs.RPOS_MINUS}")):
-        # The construct tier labels its genes above the backbone, so its
-        # title has to clear them rather than sit at the same height.
-        lift = 0.36 if name == "construct" else 0.12
-        ax.text(lo - pad, _TIER_Y[name] + height / 2 + lift, text,
+        ax.text(lo - pad, _TIER_Y[name] + height / 2 + 0.12, text,
                 ha="left", va="bottom", fontsize=fs.SIZE_TICK, color=fs.INK)
 
     y = _TIER_Y["mutant"]
-    complete = next(s for s in layout["mutant"]
-                    if s.kind == "gene" and s.label == "rpoS")
-    ax.annotate(
-        "Lacks start codon",
-        xy=((complete.start + complete.end) / 2, y + height / 2),
-        xytext=((complete.start + complete.end) / 2, y + height / 2 + 0.38),
-        ha="center", va="bottom", fontsize=fs.SIZE_SMALL, color=fs.INK,
-        arrowprops=dict(arrowstyle="-", color=fs.INK_SECONDARY, lw=0.6))
+    for kind, text, terminus in (("truncated", "C-terminal truncation", "C"),
+                                 ("gene", "Lacks start codon", "N")):
+        copy = next(s for s in layout["mutant"]
+                    if s.kind == kind and s.label == "rpoS")
+        edge = copy.end if (terminus == "C") == (copy.strand > 0) else copy.start
+        ax.annotate(
+            text, xy=(edge, y + height / 2),
+            xytext=((copy.start + copy.end) / 2, y + height / 2 + 0.24),
+            ha="center", va="bottom", fontsize=fs.SIZE_SMALL, color=fs.INK,
+            arrowprops=dict(arrowstyle="-", color=fs.INK_SECONDARY, lw=0.6))
     mutant_end = max(s.end for s in layout["mutant"])
     _scale_bar(ax, mutant_end - 1000, -0.66, 1000, "1 kb")
 
@@ -474,7 +509,9 @@ def draw_integration(ax, layout: dict, *, palette: dict = None,
 
 def draw_plasmid(ax, size: int, features: list, *, name: str = "pRE118",
                  palette: dict = None, insert: tuple = None,
-                 insert_label: str = None) -> None:
+                 insert_label: str = None, rotation: float = math.pi / 2,
+                 arm_inside: bool = False, directional: bool = False,
+                 clockwise: bool = True) -> None:
     """The sequenced vector as a ring, with the cloning site marked.
 
     `insert` is the (start, end) of the stretch the homology arm replaced, in
@@ -484,31 +521,54 @@ def draw_plasmid(ax, size: int, features: list, *, name: str = "pRE118",
     ax.set_aspect("equal")
     ax.set_xlim(-1.52, 1.52)
     ax.set_ylim(-1.22, 1.22)
-    radius, width = 0.90, 0.085
+    radius, width = 0.90, 0.13 if directional else 0.085
     palette = palette or vector_palette(f.label for f in features)
 
     def angle(bp):
-        return math.pi / 2 - 2 * math.pi * bp / size
+        return rotation + (-1 if clockwise else 1) * 2 * math.pi * bp / size
+
+    def arc(lo, hi):
+        return sorted((math.degrees(angle(lo)), math.degrees(angle(hi))))
 
     ax.add_patch(patches.Wedge((0, 0), radius, 0, 360, width=width,
                                facecolor=GRID_RING, edgecolor=fs.AXIS,
                                linewidth=0.5, zorder=1))
-    ax.text(0, 0.07, name, ha="center", va="center", fontsize=fs.SIZE_BODY,
+    ax.text(0, 0.18 if arm_inside else 0.07, name,
+            ha="center", va="center", fontsize=fs.SIZE_BODY,
             fontweight="bold", color=fs.INK)
-    ax.text(0, -0.09, f"{size:,} bp", ha="center", va="center",
+    ax.text(0, -0.16 if arm_inside else -0.09, f"{size:,} bp",
+            ha="center", va="center",
             fontsize=fs.SIZE_TICK, color=fs.INK_SECONDARY)
 
     for feature in features:
         colour = palette.get(feature.label, VECTOR_FILL)
         text = (_prime(feature.label[:-1]) if feature.label.endswith("'")
-                else feature.label)
+                else _vector_label(feature.label))
         for lo, hi in feature.parts:
+            if directional and feature.label in ("KanR", "sacB", "traJ"):
+                start, end = angle(lo), angle(hi)
+                tail, tip = (start, end) if feature.strand > 0 else (end, start)
+                direction = 1 if tip > tail else -1
+                head = min(abs(tip - tail) * 0.35, 0.20)
+                shoulder = tip - direction * head
+                angles = [tail + (shoulder - tail) * i / 40 for i in range(41)]
+                vertices = [(radius * math.cos(a), radius * math.sin(a)) for a in angles]
+                vertices.append(((radius - width / 2) * math.cos(tip),
+                                 (radius - width / 2) * math.sin(tip)))
+                vertices.extend(((radius - width) * math.cos(a),
+                                 (radius - width) * math.sin(a)) for a in reversed(angles))
+                ax.add_patch(patches.Polygon(vertices, closed=True,
+                                             facecolor=colour, edgecolor="none", zorder=3))
+                continue
             ax.add_patch(patches.Wedge(
-                (0, 0), radius, math.degrees(angle(hi)),
-                math.degrees(angle(lo)), width=width, facecolor=colour,
+                (0, 0), radius, *arc(lo, hi), width=width, facecolor=colour,
                 edgecolor="none", zorder=3))
         span = feature.parts[0] if len(feature.parts) > 1 else \
             (feature.parts[0][0], feature.parts[-1][1])
+        if arm_inside and feature.label == "rpoS'":
+            ax.text(0, -0.58, text, ha="center", va="center",
+                    fontsize=fs.SIZE_SMALL, color=fs.INK)
+            continue
         _radial_label(ax, angle(sum(span) / 2), radius + 0.10, text,
                       fontsize=fs.SIZE_SMALL, color=fs.INK_SECONDARY)
 
@@ -518,8 +578,7 @@ def draw_plasmid(ax, size: int, features: list, *, name: str = "pRE118",
         ax.plot([r0 * math.cos(a), r1 * math.cos(a)],
                 [r0 * math.sin(a), r1 * math.sin(a)],
                 color=fs.INK, lw=0.9, zorder=4)
-        ax.add_patch(patches.Wedge((0, 0), radius, math.degrees(angle(insert[1])),
-                                   math.degrees(angle(insert[0])), width=width,
+        ax.add_patch(patches.Wedge((0, 0), radius, *arc(*insert), width=width,
                                    facecolor=fs.INK, edgecolor="none", zorder=4))
         _radial_label(ax, a, r1 - 0.02, insert_label or "cloning site",
                       inward=True, fontsize=fs.SIZE_SMALL, color=fs.INK)

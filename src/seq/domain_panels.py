@@ -58,6 +58,8 @@ def draw_domain_cartoon(ax, arches: list, *, title: str = None,
                         label_mode: str = "block",
                         align_on: str = None,
                         shape: str = "block",
+                        domain_height: float = 0.60,
+                        hatch: str = None,
                         show_axis: bool = True,
                         scale_bar: tuple = None,
                         legend_ncol: int = None) -> float:
@@ -97,6 +99,8 @@ def draw_domain_cartoon(ax, arches: list, *, title: str = None,
 
     `shape` draws each domain as a "block" or as an "arrow" — the same
     pentagon a gene takes on a chromosome panel, pointing N to C.
+    `domain_height=0.36` aligns block boundaries with the protein backbone.
+    `hatch` adds a contrasting hatch to domain blocks and their legend keys.
 
     `legend_ncol` wraps the key. It defaults to one row, which is right for a
     panel as wide as the page; a panel sharing a row with another needs the
@@ -164,14 +168,19 @@ def draw_domain_cartoon(ax, arches: list, *, title: str = None,
                 if acc not in seen or s < seen[acc][1]:
                     seen[acc] = (lab, s)
                 if shape == "arrow":
-                    fs.arrow(ax, s, e, 1, y, 0.60, colour, edgecolor="black",
+                    fs.arrow(ax, s, e, 1, y, domain_height, colour, edgecolor="black",
                              lw=0.9 if heavy else 0.6, zorder=2,
                              min_head=max_len * 0.035)
                 else:
                     ax.add_patch(patches.Rectangle(
-                        (s, y - 0.30), e - s, 0.60, facecolor=colour,
+                        (s, y - domain_height / 2), e - s, domain_height, facecolor=colour,
                         edgecolor="black", linewidth=0.9 if heavy else 0.6,
                         zorder=2))
+                    if hatch:
+                        ax.add_patch(patches.Rectangle(
+                            (s, y - domain_height / 2), e - s, domain_height,
+                            facecolor="none", edgecolor=fs.ink_on(colour),
+                            hatch=hatch, linewidth=0, zorder=2.1))
                 if keyed:
                     pass
                 elif named_above:
@@ -222,7 +231,8 @@ def draw_domain_cartoon(ax, arches: list, *, title: str = None,
         order = sorted(seen, key=lambda acc: seen[acc][1])
         handles = [patches.Polygon([(0, 0)], closed=True,
                                    facecolor=block_colour(acc),
-                                   edgecolor="black", linewidth=0.6)
+                                   edgecolor=fs.ink_on(block_colour(acc)) if hatch else "black",
+                                   hatch=hatch, linewidth=0.6)
                    for acc in order]
         fs.legend(ax, handles, [seen[acc][0] for acc in order],
                   loc="lower right", ncol=key_cols, handlelength=1.1,

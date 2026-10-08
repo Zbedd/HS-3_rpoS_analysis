@@ -1487,8 +1487,8 @@
     {
       "path": "src/seq/rpoS_locus/config.yaml",
       "destination": null,
-      "bytes": 11183,
-      "sha256": "abef6658fecd35d034593f016d79486cbdc5b69a6d25c6f5d52160d949609ce4",
+      "bytes": 10956,
+      "sha256": "e62f76db20b783bac0adddbdc91740b7a5a305322bd5e156ef10e25011a0557a",
       "analyses": [
         "rpos",
         "alt-factors"

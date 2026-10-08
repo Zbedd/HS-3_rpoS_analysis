@@ -232,7 +232,7 @@ class Segment:
     end: int
     strand: int
     label: str
-    kind: str           # gene | truncated | arm | vector | backbone
+    kind: str           # gene | truncated | arm | vector | backbone | marker
 
     @property
     def length(self) -> int:
@@ -290,10 +290,11 @@ def locus_layout(cfg: dict, paths: Paths, integration: Integration) -> dict:
                                   seg.label, seg.kind))
     # The vector is not a block on this tier: only the genes it carries are
     # drawn, and everything else it contributes is distance.
-    markers = (cfg.get("integration_panel") or {}).get("markers") or []
-    for label, start, end in vector_blocks(cfg, paths, integration):
+    panel = cfg.get("integration_panel") or {}
+    markers = (panel.get("markers") or []) + (panel.get("markers_after_break") or [])
+    for label, start, end, strand in vector_blocks(cfg, paths, integration):
         if label in markers:
-            mutant.append(Segment(arm_hi + start, arm_hi + end, 1,
+            mutant.append(Segment(arm_hi + start, arm_hi + end, strand,
                                   label, "marker"))
     mutant.sort(key=lambda s: s.start)
 
@@ -310,6 +311,7 @@ def locus_layout(cfg: dict, paths: Paths, integration: Integration) -> dict:
     return {
         "break": gap,
         "construct": construct,
+        "circular_construct": io.construct(cfg, paths, integration),
         "wt": wt,
         "mutant": mutant,
         "arm": arm,
@@ -323,20 +325,26 @@ def locus_layout(cfg: dict, paths: Paths, integration: Integration) -> dict:
 
 def _collapse(cfg: dict, paths: Paths, integration: Integration,
               segments: list, vector_to: int) -> tuple:
-    """Shorten the vector between the last marker drawn and the 3' copy.
+    """Shorten the vector between markers on either side of the break.
 
     Returns the segments with everything beyond the cut moved left, and the
     (start, end) the break mark occupies — or the segments untouched and None
     when no marker is configured.
     """
     panel = cfg.get("integration_panel") or {}
-    ends = [seg.end for seg in segments if seg.kind == "marker"]
+    trailing = set(panel.get("markers_after_break") or [])
+    ends = [seg.end for seg in segments
+            if seg.kind == "marker" and seg.label not in trailing]
     if not ends:
         return segments, None
 
     cut_from = max(ends) + panel.get("keep_bp", 260)
+    trailing_starts = [seg.start for seg in segments
+                       if seg.kind == "marker" and seg.label in trailing]
+    cut_to = (min(trailing_starts) - panel.get("keep_bp", 260)
+              if trailing_starts else vector_to)
     break_bp = panel.get("break_bp", 420)
-    removed = vector_to - cut_from - break_bp
+    removed = cut_to - cut_from - break_bp
     if removed <= 0:
         return segments, None
 
@@ -344,12 +352,12 @@ def _collapse(cfg: dict, paths: Paths, integration: Integration,
     for seg in segments:
         moved.append(Segment(seg.start - removed, seg.end - removed,
                              seg.strand, seg.label, seg.kind)
-                     if seg.start >= vector_to else seg)
+                     if seg.start >= cut_to else seg)
     return moved, (cut_from, cut_from + break_bp)
 
 
 def vector_blocks(cfg: dict, paths: Paths, integration: Integration) -> list:
-    """Where each pRE118 feature lands inside the integrated block.
+    """(Label, start, end, strand) for each integrated pRE118 feature.
 
     Offsets are bp from the first base of the vector as it appears in the
     chromosome, which is pRE118 `vector_start` — not pRE118 position 1.
@@ -360,5 +368,6 @@ def vector_blocks(cfg: dict, paths: Paths, integration: Integration) -> list:
     for feature in features:
         for lo, hi in feature.parts:
             start = (lo - integration.vector_start) % size
-            blocks.append((feature.label, start, start + (hi - lo + 1)))
+            blocks.append((feature.label, start, start + (hi - lo + 1),
+                           feature.strand))
     return blocks

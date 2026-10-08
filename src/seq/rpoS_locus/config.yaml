@@ -238,15 +238,12 @@ vector:
   features: [KanR, sacB, "sacB promoter", "R6K γ ori", oriT, traJ, traK]
 
 # ── Panel D: how the outcome tier is drawn ────────────────────
-# The vector between the selection marker and the 3' copy carries nothing the
-# panel claims, and 4 kb of it drawn to scale pushes rpoS off the page. It is
-# collapsed behind a break mark instead. Lengths are bp of drawn width, so
-# they scale with the rest of the tier.
+# Compress the vector between KanR and sacB behind a break mark, keeping both
+# genes visible with their annotated directions. Lengths are bp of drawn width.
 integration_panel:
-  markers: [KanR]     # vector genes drawn on the outcome tier; the rest of the
-                      # vector contributes only distance, which the backbone
-                      # line carries at the same scale as any intergenic gap
-  keep_bp: 260        # vector still drawn past the last marker
+  markers: [KanR]     # vector genes before the break on the outcome tier
+  markers_after_break: [sacB]
+  keep_bp: 260        # vector retained beside the markers at either break edge
   break_bp: 420       # width the break mark occupies
 
 junction:

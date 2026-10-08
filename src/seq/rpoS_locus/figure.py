@@ -39,7 +39,7 @@ def synteny(cfg: dict, paths: Paths, out: Path) -> list:
 def integration(cfg: dict, paths: Paths, out: Path) -> list:
     integ = junction.resolve(cfg, paths)
     _, features = io.vector(cfg, paths)
-    fig, ax = plt.subplots(figsize=(fs.COL_DOUBLE, 2.6))
+    fig, ax = plt.subplots(figsize=(fs.COL_DOUBLE, 3.1))
     panels.draw_integration(
         ax, junction.locus_layout(cfg, paths, integ),
         palette=panels.vector_palette(f.label for f in features),

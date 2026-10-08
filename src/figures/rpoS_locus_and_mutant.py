@@ -16,7 +16,7 @@ from seq.rpos_alignments import interpro
 from seq.rpos_alignments.paths import Paths as Rq2Paths, load_config as rq2_config
 from seq.rpoS_locus import io, junction, panels
 
-ROWS = [{"locus": 2.25}, {"domains": 2.00}, {"construct": 2.30}]
+ROWS = [{"locus": 2.25}, {"domains": 2.00}, {"construct": 3.10}]
 RING_SPLIT = [0.30, 0.70]
 
 
@@ -44,12 +44,15 @@ def plot(out_path: Path, workdir: Path = None) -> list:
     rq2_paths = Rq2Paths(paths.workdir)
     rq2_cfg = rq2_config(paths.workdir)
     arches = interpro.architecture_rows(rq2_paths, rq2_cfg, ("rpoS",))
+    arches = [(label.replace("rpoS", "RpoS"), arch, is_hs3)
+              for label, arch, is_hs3 in arches]
 
     ax_dom = fig.add_subplot(page["domains"])
     domain_panels.draw_domain_cartoon(ax_dom, arches,
                                      type_scale=domain_panels.HOUSE_TYPE,
                                      emphasis="label", label_mode="legend",
-                                     align_on="PF00140", shape="arrow",
+                                     align_on="PF00140", shape="block",
+                                     domain_height=0.36,
                                      show_axis=False, scale_bar=(100, "100 aa"))
     axes.append(ax_dom)
 
