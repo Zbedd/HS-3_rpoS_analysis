@@ -247,9 +247,11 @@ EPS = 1e-4
 # contrasts the rpoS mutant against its own marker/parent control. No
 # `color`: a difference takes a contrast hue by position, held apart from the
 # strain colours it is a difference of.
+# Display the PA14 reference pair before HS-3 within each medium. Keep each
+# comparison intact so its images, values and effect move together.
 RPOS_EFFECT = [
-    {'label': 'HS-3', 'numerator': 'rpoS', 'denominator': 'kanR'},
     {'label': 'PA14', 'numerator': 'PA14_rpoS', 'denominator': 'PA14'},
+    {'label': 'HS-3', 'numerator': 'rpoS', 'denominator': 'kanR'},
 ]
 
 NAME_RE = re.compile(r'^(?P<time>48h|72h)_(?P<media>LB|NaCl-|R2A)_(?P<idx>\d+)$')
